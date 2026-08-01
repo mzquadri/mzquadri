@@ -1,89 +1,37 @@
-# Hi, I'm Mohd Zamin Quadri
+# Mohd Zamin Quadri
 
-**AI/ML Engineer | M.Sc. Mathematics in Science & Engineering @ TU Munich**
+**Machine Learning Engineer and M.Sc. Mathematics student at the Technical University of Munich**
 
-I build machine learning systems that solve real-world problems -- from NLP pipelines and deep learning models to production MLOps infrastructure. My background combines rigorous mathematical foundations with hands-on engineering experience across insurance AI, automotive data systems, and scientific computing.
+I build reproducible machine learning systems for scientific computing, mobility, and time-series forecasting. My work combines mathematical modelling, uncertainty quantification, deep learning, and practical ML engineering.
 
----
+## Focus
 
-### About Me
+- Uncertainty quantification and reliable ML
+- Graph neural network surrogates for transport simulation
+- Time-series forecasting and hydrology
+- PyTorch, scikit-learn, Python, Docker, and FastAPI
 
-- Working Student AI Engineer at **BP-ITCS**, building AI prototypes and ML pipelines for insurance clients
-- M.Sc. Mathematics in Science & Engineering at **Technical University of Munich** (TUM)
-- Master's thesis: GNN-based surrogate models for agent-based transport simulations
-- Research experience in neural network theory, uncertainty quantification, and numerical methods
-- Previously at **AUDI AG** (data automation) and **IISER Bhopal** (battery ML research)
+## Selected Work
 
----
+| Project | What it demonstrates |
+| --- | --- |
+| [GNN Surrogates for Agent-Based Transport Models](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) | Master's thesis on post-hoc uncertainty quantification, calibration, selective prediction, and error detection for graph neural network surrogates. |
+| [Deep Learning Flood Prediction](https://github.com/mzquadri/Deep-Learning-Flood-Prediction-LSTM) | Reproducible LSTM forecasting pipeline with saved metrics and visual diagnostics. Results currently use synthetic data. |
+| [Streamflow Forecasting](https://github.com/mzquadri/Time-Series-Streamflow-Forecasting) | Comparative SARIMAX and XGBoost time-series experiment with tracked evaluation artifacts. Results currently use synthetic data. |
+| [CNN Image Classification](https://github.com/mzquadri/CNN-Image-Classification-PyTorch) | CIFAR-10 image-classification workflow using a custom PyTorch CNN, augmentation, and OneCycleLR. |
+| [Hydrology Uncertainty Quantification](https://github.com/mzquadri/Uncertainity-Quantification-in-Hydralogy-Project-Seminar-) | TUM project seminar work covering calibration, sensitivity analysis, and input/output uncertainty in hydrological modelling. |
 
-### Tech Stack
+## Background
 
-**Languages**  
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat&logo=mathworks&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
-![VBA](https://img.shields.io/badge/VBA-217346?style=flat&logo=microsoftexcel&logoColor=white)
-![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat&logo=latex&logoColor=white)
+- M.Sc. Mathematics in Science and Engineering, Technical University of Munich
+- Master's thesis: uncertainty quantification for GNN surrogates of agent-based transport models
+- Working Student AI Engineer at BP-ITCS
+- Previous experience in data automation and battery machine-learning research
 
-**ML / Deep Learning**  
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
-![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=flat)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white)
+## Connect
 
-**MLOps & Infrastructure**  
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
+[LinkedIn](https://www.linkedin.com/in/mohd-zamin/) | [Portfolio](https://mzquadri.de) | [Email](mailto:mohd.zamin@tum.de)
 
-**Visualization & Analytics**  
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat)
-![Seaborn](https://img.shields.io/badge/Seaborn-444876?style=flat)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
+### Portfolio Principles
 
----
-
-### Featured Projects
-
-| Project | Description | Stack |
-|---------|-------------|-------|
-| [NLP-Text-Classification-Transformers](https://github.com/mzquadri/NLP-Text-Classification-Transformers) | Fine-tuned DistilBERT for 4-class news classification on AG News | PyTorch, HuggingFace, Transformers |
-| [CNN-Image-Classification-PyTorch](https://github.com/mzquadri/CNN-Image-Classification-PyTorch) | Custom CNN for CIFAR-10 with batch norm, augmentation, OneCycleLR | PyTorch, torchvision |
-| [MLOps-End-to-End-Pipeline](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Production ML pipeline with feature store, model registry, Docker, REST API | MLflow, FastAPI, Docker |
-| [Insurance-Claims-Prediction-ML](https://github.com/mzquadri/Insurance-Claims-Prediction-ML) | Claims prediction with calibrated probabilities and SHAP explainability | XGBoost, scikit-learn, SHAP |
-| [Neural-Network-Identifiability-Analysis](https://github.com/mzquadri/Neural-Network-Identifiability-Analysis) | Computational study of Fefferman's identifiability framework for ReLU networks | NumPy, PyTorch, NetworkX |
-| [Deep-Learning-Flood-Prediction-LSTM](https://github.com/mzquadri/Deep-Learning-Flood-Prediction-LSTM) | LSTM-based river flood prediction achieving R2=0.899 | PyTorch, LSTM |
-| [Battery-SOC-Estimation-ML](https://github.com/mzquadri/Battery-SOC-Estimation-ML) | Li-ion battery state-of-charge estimation with ML and genetic-fuzzy methods | scikit-learn, SciPy |
-| [Supply-Chain-Analytics-Dashboard](https://github.com/mzquadri/Supply-Chain-Analytics-Dashboard) | Demand forecasting, supplier scoring, and inventory optimization dashboard | Streamlit, Prophet, PuLP |
-| [Time-Series-Streamflow-Forecasting](https://github.com/mzquadri/Time-Series-Streamflow-Forecasting) | Streamflow forecasting with ARIMA, XGBoost, and Prophet comparison | statsmodels, XGBoost, Prophet |
-| [ML-Water-Quality-Classification](https://github.com/mzquadri/ML-Water-Quality-Classification) | End-to-end ML pipeline for water potability classification | scikit-learn, XGBoost |
-
----
-
-### Certifications
-
-- **AWS Certified Cloud Practitioner** (CLF-C02)
-- **IBM AI Engineering Professional Certificate** (Coursera)
-- **Google Data Analytics Professional Certificate** (Coursera)
-
----
-
-### Education
-
-| Degree | Institution | Focus |
-|--------|-------------|-------|
-| M.Sc. Mathematics in Science & Engineering | Technical University of Munich | ML, Numerical Methods, Optimization |
-| B.Sc. Mathematics | Aligarh Muslim University | Pure & Applied Mathematics |
-
----
-
-### Connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohd-zamin/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/mzquadri)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:mohd.zamin@tum.de)
+Each featured repository documents its data source, environment, scope, and limitations. Experimental metrics are presented as reproducible project results, not as production-performance claims.
