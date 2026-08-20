@@ -1,39 +1,37 @@
 # Mohd Zamin Quadri
 
-**Machine Learning Engineer and M.Sc. Mathematics student at the Technical University of Munich**
+**AI/ML Engineer building reliable intelligent systems from models to production.**
 
-I build reproducible machine learning systems for scientific computing, mobility, and time-series forecasting. My work combines mathematical modelling, uncertainty quantification, deep learning, and practical ML engineering.
+I work across uncertainty-aware modelling, graph neural networks, reproducible experiments,
+and the engineering needed to make evidence usable.
 
 ## Focus
 
-- Uncertainty quantification and reliable ML
+- Reliable ML, uncertainty quantification, and scientific computing
 - Graph neural network surrogates for transport simulation
-- RAG and LLM application engineering (FastAPI, Qdrant, Ollama)
-- Time-series forecasting and hydrology
-- PyTorch, scikit-learn, Python, Docker, and FastAPI
+- MLOps, evaluation pipelines, APIs, and containers
+- Grounded RAG and local-first AI application engineering
+- Python, PyTorch, scikit-learn, FastAPI, Docker, and pytest
 
 ## Selected Work
 
-| Project | What it demonstrates |
+| Project | Evidence boundary |
 | --- | --- |
-| [UQ for ML Models in Transportation Policy Analysis — M.Sc. Thesis (TUM)](https://github.com/mzquadri/ml-surrogates-thesis) | Post-hoc uncertainty quantification for GNN surrogates of MATSim transport simulations: MC Dropout, conformal prediction, calibration, selective prediction, error detection. Full thesis PDF and code included. |
-| [InsureAssist RAG MLOps](https://github.com/mzquadri/insureassist-rag-mlops) | Insurance-assistant RAG service with FastAPI, Qdrant, and Ollama (Llama 3.2), including evaluation, fine-tuning, Docker Compose, and Kubernetes manifests. |
-| [Deep Learning Flood Prediction](https://github.com/mzquadri/Deep-Learning-Flood-Prediction-LSTM) | Reproducible LSTM forecasting pipeline with saved metrics and visual diagnostics. Results currently use synthetic data. |
-| [Streamflow Forecasting](https://github.com/mzquadri/Time-Series-Streamflow-Forecasting) | Comparative SARIMAX and XGBoost time-series experiment with tracked evaluation artifacts. Results currently use synthetic data. |
-| [CNN Image Classification](https://github.com/mzquadri/CNN-Image-Classification-PyTorch) | CIFAR-10 image-classification workflow using a custom PyTorch CNN, augmentation, and OneCycleLR. |
-| [Hydrology Uncertainty Quantification](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | TUM project seminar work covering calibration, sensitivity analysis, and input/output uncertainty in hydrological modelling. |
+| [Transport Policy Surrogate UQ](https://github.com/mzquadri/ml-surrogates-thesis) | Canonical destination for the submitted thesis artifact and post-submission reproducibility updates; repository consolidation is in progress. |
+| [End-to-End MLOps Pipeline](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Tested reference implementation with validated data, lineage, promotion gates, serving, and deterministic synthetic fallback. No production deployment is claimed. |
+| [InsureAssist RAG](https://github.com/mzquadri/insureassist-rag-mlops) | Local engineering prototype with cited retrieval, FastAPI, Docker, and authored Kubernetes manifests. No completed cloud deployment is claimed. |
+| [Hydrology Uncertainty Quantification](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | Three-person TUM group coursework on calibration, sensitivity, and uncertainty propagation. Individual ownership of all results is not claimed. |
+| [Portfolio Platform](https://github.com/mzquadri/ZQ) | Next.js portfolio with typed factual governance, accessibility checks, security headers, and Playwright regression tests. |
 
-## Background
+## Research Status
 
-- M.Sc. Mathematics in Science and Engineering, Technical University of Munich
-- Master's thesis: uncertainty quantification for GNN surrogates of agent-based transport models
-- Working Student AI Engineer at BP-ITCS
-- Previous experience in data automation and battery machine-learning research
+My Master's thesis, *Uncertainty Quantification for Machine Learning Models in Transportation
+Policy Analysis*, was submitted at the Technical University of Munich on May 15, 2026. This is
+a submission statement, not a claim of degree conferral, defense, grade, or graduation.
 
 ## Connect
 
-[LinkedIn](https://www.linkedin.com/in/mohd-zamin/) | [Portfolio](https://mzquadri.de) | [Email](mailto:mohd.zamin@tum.de)
+[Portfolio](https://mzquadri.de) | [LinkedIn](https://www.linkedin.com/in/mohdzaminquadri/)
 
-### Portfolio Principles
-
-Each featured repository documents its data source, environment, scope, and limitations. Experimental metrics are presented as reproducible project results, not as production-performance claims.
+Public identity, status, project, and contact facts were reviewed on August 20, 2026. Numerical
+claims remain bounded by the versioned artifacts and limitations in each repository.
