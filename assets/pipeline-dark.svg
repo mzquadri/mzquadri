@@ -1,0 +1,19 @@
+<svg width="950" height="72" viewBox="0 0 950 72" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <line x1="0" y1="27" x2="950" y2="27" stroke="#334155" stroke-width="1.5"/>
+
+  <rect x="0" y="14" width="230" height="26" rx="13" fill="#2dd4bf"/>
+  <text x="115" y="31" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a">Research</text>
+  <text x="115" y="58" text-anchor="middle" font-size="9" fill="#94a3b8">science &amp; data</text>
+
+  <rect x="240" y="14" width="230" height="26" rx="13" fill="#818cf8"/>
+  <text x="355" y="31" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a">Modelling</text>
+  <text x="355" y="58" text-anchor="middle" font-size="9" fill="#94a3b8">UQ, GNN surrogates</text>
+
+  <rect x="480" y="14" width="230" height="26" rx="13" fill="#fbbf24"/>
+  <text x="595" y="31" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a">Engineering</text>
+  <text x="595" y="58" text-anchor="middle" font-size="9" fill="#94a3b8">MLOps, APIs</text>
+
+  <rect x="720" y="14" width="230" height="26" rx="13" fill="#fb7185"/>
+  <text x="835" y="31" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a">Deployment</text>
+  <text x="835" y="58" text-anchor="middle" font-size="9" fill="#94a3b8">evidence-bound release</text>
+</svg>
