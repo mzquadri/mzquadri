@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
-"""Rewrite the generated blocks of README.md from the GitHub API.
+"""Rewrite the generated blocks of README.md from the GitHub API and the site feed.
 
-Two blocks, each delimited by markers so the hand-written prose around them is
+Three blocks, each delimited by markers so the hand-written prose around them is
 never touched:
 
-  AUTO:now    the few repositories last pushed to, with how long ago
-  AUTO:index  every public repository, language and one-line description
+  AUTO:now      the few repositories last pushed to, with how long ago
+  AUTO:index    every public repository, language and one-line description
+  AUTO:writing  the articles on mzquadri.de, grouped by subject
 
 The "currently working on" line is the section of a profile most likely to go
 stale, so this derives it from push timestamps instead of asking anyone to
 remember to edit it.
+
+The writing block groups by category rather than presenting a "latest" list:
+the feed stamps nearly every item with the same pubDate, so ordering by date
+would really be ordering alphabetically, and calling that "latest" would be a
+recency claim the feed cannot support.
 
     python scripts/update_readme.py            # rewrite the blocks
     python scripts/update_readme.py --check    # non-zero if they are out of date
@@ -26,11 +32,20 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
 OWNER = os.environ.get("PROFILE_OWNER", "mzquadri")
 API = "https://api.github.com"
+FEED = os.environ.get("PROFILE_FEED", "https://mzquadri.de/rss.xml")
+
+# ElementTree does not resolve external entities, but it will happily expand a
+# nested internal one until the runner runs out of memory. Both that and XXE
+# need a DOCTYPE, and a feed has no legitimate reason to carry one, so the
+# document is refused before the parser sees it. Cheaper than taking a
+# defusedxml dependency into the workflow for a single parse.
+FEED_MAX_BYTES = 4 * 1024 * 1024
 
 NOW_COUNT = 3
 # Teaching exercises stay in the index but should not be presented as current work.
@@ -134,6 +149,71 @@ def block_index(rs: list[dict], now: datetime) -> str:
     return "\n".join(lines)
 
 
+def articles() -> list[dict[str, str]]:
+    """Read the site feed. Returns [] if it cannot be reached."""
+    req = urllib.request.Request(FEED)
+    req.add_header("User-Agent", "mzquadri-profile-readme-updater")
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            raw = resp.read(FEED_MAX_BYTES + 1)
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as exc:
+        print(f"feed unreachable, leaving the writing block alone: {exc}", file=sys.stderr)
+        return []
+
+    if len(raw) > FEED_MAX_BYTES:
+        print("feed is larger than expected, refusing to parse it", file=sys.stderr)
+        return []
+    if re.search(rb"<!DOCTYPE", raw, re.IGNORECASE):
+        print("feed carries a DOCTYPE, refusing to parse it", file=sys.stderr)
+        return []
+
+    try:
+        root = ElementTree.fromstring(raw)
+    except ElementTree.ParseError as exc:
+        print(f"feed did not parse, leaving the writing block alone: {exc}", file=sys.stderr)
+        return []
+
+    out = []
+    for item in root.findall("./channel/item"):
+        title = (item.findtext("title") or "").strip()
+        link = (item.findtext("link") or "").strip()
+        if not title or not link:
+            continue
+        out.append(
+            {
+                "title": title,
+                "link": link,
+                "category": (item.findtext("category") or "Other").strip(),
+            }
+        )
+    return out
+
+
+def block_writing(posts: list[dict[str, str]]) -> str | None:
+    """None means leave whatever is already there."""
+    if not posts:
+        return None
+
+    by_category: dict[str, list[dict[str, str]]] = {}
+    for p in posts:
+        by_category.setdefault(p["category"], []).append(p)
+
+    lines = [
+        f"**{len(posts)} pieces** at [mzquadri.de/learn](https://mzquadri.de/learn), "
+        "grouped by what they are about.",
+        "",
+    ]
+    for category in sorted(by_category):
+        entries = sorted(by_category[category], key=lambda p: p["title"])
+        lines.append(f"**{category}**")
+        lines.append("")
+        for p in entries:
+            title = p["title"].replace("|", "\\|")
+            lines.append(f"- [{title}]({p['link']})")
+        lines.append("")
+    return "\n".join(lines).rstrip()
+
+
 def splice(text: str, name: str, body: str) -> str:
     start, end = f"<!-- AUTO:{name}:start -->", f"<!-- AUTO:{name}:end -->"
     if start not in text or end not in text:
@@ -161,6 +241,10 @@ def main() -> int:
     before = README.read_text(encoding="utf-8")
     after = splice(before, "now", block_now(rs, now))
     after = splice(after, "index", block_index(rs, now))
+
+    writing = block_writing(articles())
+    if writing is not None:
+        after = splice(after, "writing", writing)
 
     if args.check:
         if before != after:

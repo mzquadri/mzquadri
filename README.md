@@ -110,6 +110,54 @@ does not establish.
 </details>
 <!-- AUTO:claims:end -->
 
+## Writing
+
+<details>
+<summary><b>Notes on reliable AI, calibration and production engineering</b></summary>
+
+<!-- AUTO:writing:start -->
+**13 pieces** at [mzquadri.de/learn](https://mzquadri.de/learn), grouped by what they are about.
+
+**Backend and Distributed Systems**
+
+- [Designing Replay as a Normal Path](https://mzquadri.de/learn/designing-replay-as-a-normal-path)
+- [Idempotent Ingestion Across Heterogeneous Stores](https://mzquadri.de/learn/idempotent-ingestion-across-heterogeneous-stores)
+
+**Document Intelligence**
+
+- [Template-Driven Document Extraction With LLMs](https://mzquadri.de/learn/template-driven-document-extraction)
+
+**Explainable AI**
+
+- [What a Saliency Map Does Not Prove](https://mzquadri.de/learn/what-a-saliency-map-does-not-prove)
+
+**MLOps**
+
+- [Promotion Gates for Model Release](https://mzquadri.de/learn/promotion-gates-for-model-release)
+
+**Machine Learning**
+
+- [Calibration Is Not Classification Accuracy](https://mzquadri.de/learn/calibration-is-not-classification-accuracy)
+
+**Reliable AI Systems**
+
+- [Building an Independent Verification Oracle](https://mzquadri.de/learn/building-an-independent-verification-oracle)
+- [Equal Counts Do Not Prove Two Stores Agree](https://mzquadri.de/learn/equal-counts-do-not-prove-two-stores-agree)
+- [Evidence Provenance for Knowledge Systems](https://mzquadri.de/learn/evidence-provenance-for-knowledge-systems)
+- [Production AI Systems Need Refusal Paths](https://mzquadri.de/learn/refusal-paths-in-production-ai-systems)
+- [Re-ingest, Verify, Reconcile, Withdraw](https://mzquadri.de/learn/reingest-verify-reconcile-withdraw)
+
+**Retrieval and Grounded Generation**
+
+- [Hybrid Retrieval Without Silent Failure](https://mzquadri.de/learn/hybrid-retrieval-without-silent-failure)
+
+**Uncertainty Quantification**
+
+- [Selective Prediction: When Models Should Abstain](https://mzquadri.de/learn/selective-prediction-when-models-should-abstain)
+<!-- AUTO:writing:end -->
+
+</details>
+
 <details>
 <summary><b>Every public repository</b></summary>
 
