@@ -1,0 +1,146 @@
+# Every number this profile publishes, and the file in another repository that
+# produces it.
+#
+# scripts/verify_claims.py checks two things per entry: that the source still
+# says what it said, and that README.md still renders the matching text. A
+# figure in a README that nothing verifies is a claim, not a result, so the
+# workflow fails rather than letting the two drift apart quietly.
+#
+# kinds:
+#   json    read a key path out of a JSON file and compare numerically
+#   regex   assert a pattern still matches the source text
+#   derived extract named numbers by regex, evaluate an expression, compare
+#
+# `shown` is the exact substring that must appear in README.md.
+
+defaults:
+  branch: main
+
+claims:
+  # --- mcp-policy-gateway -------------------------------------------------
+  - id: mcp-caught
+    repo: mcp-policy-gateway
+    source: assets/summary.json
+    kind: json
+    key: gateway_caught
+    expect: 0.9615
+    tol: 0.0002
+    shown: "96.2%"
+    note: Adversarial corpus catch rate.
+
+  - id: mcp-false-block
+    repo: mcp-policy-gateway
+    source: assets/summary.json
+    kind: json
+    key: gateway_false_block
+    expect: 0.0952
+    tol: 0.0002
+    shown: "9.5%"
+    note: False positive rate on benign calls.
+
+  - id: mcp-keyword-baseline
+    repo: mcp-policy-gateway
+    source: assets/summary.json
+    kind: json
+    key: keyword_caught
+    expect: 0.3846
+    tol: 0.0002
+    shown: "38.5%"
+    note: Keyword baseline, the thing the gateway has to beat.
+
+  - id: mcp-unhandled
+    repo: mcp-policy-gateway
+    source: assets/summary.json
+    kind: json
+    key: unhandled
+    length: true
+    expect: 3
+    tol: 0
+    shown: "Three scored misses"
+    note: Misses kept in the corpus rather than deleted from it.
+
+  # --- insureassist-rag-mlops ---------------------------------------------
+  - id: rag-top-doc
+    repo: insureassist-rag-mlops
+    source: eval/reference_run.json
+    kind: json
+    key: retrieval.metrics.top_document_accuracy
+    expect: 0.5556
+    tol: 0.0002
+    shown: "0.556"
+    note: Hybrid retriever, test split.
+
+  - id: rag-starting-point
+    repo: insureassist-rag-mlops
+    source: docs/BENCHMARK.md
+    kind: regex
+    pattern: '0\.167\s*→\s*0\.556'
+    shown: "3.3× from the 0.167 starting point"
+    note: >
+      The 3.3x is against the documented starting point, not against the dense
+      or BM25 baselines in reference_run.json, which sit at 1.00x and 1.67x.
+
+  # --- ml_surrogates (M.Sc. thesis) ---------------------------------------
+  - id: thesis-ece
+    repo: ml_surrogates_for_agent_based_transport_models
+    source: docs/UQ_SUMMARY.md
+    kind: regex
+    pattern: 'ECE by 90\.5%'
+    shown: "90.5%"
+    note: Temperature scaling, ECE 0.356 -> 0.034.
+
+  - id: thesis-selective-mae
+    repo: ml_surrogates_for_agent_based_transport_models
+    source: docs/UQ_SUMMARY.md
+    kind: regex
+    pattern: '\|\s*50%\s*\|\s*2\.32\s*\|\s*\*\*-41\.2%\*\*'
+    shown: "41.2%"
+    note: MAE reduction when the least reliable half is withheld.
+
+  # --- drift-aware-ml-platform --------------------------------------------
+  - id: drift-target
+    repo: drift-aware-ml-platform
+    source: README.md
+    kind: regex
+    pattern: "target's drift score is 0\\.679"
+    shown: "0.679"
+    note: No committed metrics file in that repo; its README is the source.
+
+  - id: drift-blind-spot
+    repo: drift-aware-ml-platform
+    source: README.md
+    kind: regex
+    pattern: 'feature-only monitor sleeps through a 63% rise'
+    shown: "63% rise"
+
+  # --- munich-accident-forecasting ----------------------------------------
+  - id: munich-reproduction
+    repo: munich-accident-forecasting
+    source: README.md
+    kind: regex
+    pattern: 'match `results/reference_run\.json` to 1e-9'
+    shown: "1e-9"
+    note: A property of the CI gate rather than a measured quantity.
+
+  # --- UQ-Hydrology-Seminar-TUM -------------------------------------------
+  - id: hydro-nse-cost
+    repo: UQ-Hydrology-Seminar-TUM
+    source: README.md
+    kind: derived
+    extract:
+      baseline: 'an NSE of \*\*(?P<v>0\.9076)\*\*'
+      perturbed: 'Mean NSE falls to \*\*(?P<v>0\.7592)\*\*'
+    expression: baseline - perturbed
+    expect: 0.1484
+    tol: 0.0002
+    shown: "0.148 NSE"
+    note: >
+      The repository rounds this to "about 0.15" in prose. The profile states
+      the difference of the two published figures.
+
+  - id: hydro-recovery
+    repo: UQ-Hydrology-Seminar-TUM
+    source: README.md
+    kind: regex
+    pattern: 'recalibration recovers 5\.76% of the loss'
+    shown: "5.76%"

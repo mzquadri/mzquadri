@@ -1,0 +1,45 @@
+name: health
+
+# Every image on this profile that someone else hosts is a thing that can go
+# dark without warning. This checks them weekly and opens an issue when one
+# does, so a broken profile is something I am told about rather than something
+# a visitor discovers.
+
+on:
+  schedule:
+    - cron: "23 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  widgets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Probe every third-party image in the README
+        id: probe
+        continue-on-error: true
+        run: python scripts/check_widgets.py
+
+      - name: Open an issue if anything is broken
+        if: steps.probe.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          title="Profile README: a third-party image stopped serving"
+          existing=$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file widget-report.md
+            echo "commented on #$existing"
+          else
+            # No --label: creating an issue with a label that does not exist fails.
+            gh issue create --title "$title" --body-file widget-report.md
+          fi

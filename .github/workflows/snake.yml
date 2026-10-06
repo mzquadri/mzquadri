@@ -1,0 +1,39 @@
+name: snake
+
+# Renders the contribution graph as a snake game and pushes the two SVGs to the
+# `output` branch, which the README points at. Kept off main so regenerating an
+# image twice a day does not bury the real history.
+
+on:
+  schedule:
+    - cron: "41 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate
+        uses: Platane/snk@v3.5.0
+        id: snake
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Push to the output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "Regenerate contribution snake"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

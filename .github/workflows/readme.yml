@@ -1,0 +1,73 @@
+name: readme
+
+# Rebuilds the generated blocks of the profile README and re-checks every
+# published figure against the file in another repository that produced it.
+#
+# Verification runs even when it is going to fail, so the status table on the
+# profile shows which claim broke rather than silently staying green.
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "claims.yml"
+      - "scripts/**"
+      - ".github/workflows/readme.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install --quiet pyyaml
+
+      - name: Regenerate the hero banner
+        run: python scripts/make_hero.py
+
+      - name: Refresh the generated blocks
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_readme.py
+
+      - name: Verify published figures against their sources
+        id: claims
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/verify_claims.py --report
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "nothing changed"
+            exit 0
+          fi
+          git add -A
+          git commit -m "Refresh generated profile sections"
+          git push
+
+      # Surfaced after the commit so the README always records the true state.
+      - name: Fail if a published figure no longer matches its source
+        if: steps.claims.outcome == 'failure'
+        run: |
+          echo "::error::A number published on the profile no longer matches the file that produced it. See the claims step above."
+          exit 1
