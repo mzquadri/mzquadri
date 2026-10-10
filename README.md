@@ -68,8 +68,8 @@ does not establish.
 
 <!-- AUTO:now:start -->
 - **[insureassist-rag-mlops](https://github.com/mzquadri/insureassist-rag-mlops)** — Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI,… <sub>`today` · Python</sub>
-- **[drift-aware-ml-platform](https://github.com/mzquadri/drift-aware-ml-platform)** — Hourly demand forecasting that detects concept drift in its own target and retrains itself <sub>`2 days ago` · Python</sub>
-- **[mcp-policy-gateway](https://github.com/mzquadri/mcp-policy-gateway)** — Runtime policy enforcement and adversarial evaluation for MCP tool calls <sub>`2 days ago` · Python</sub>
+- **[drift-aware-ml-platform](https://github.com/mzquadri/drift-aware-ml-platform)** — Hourly demand forecasting that detects concept drift in its own target and retrains itself <sub>`3 days ago` · Python</sub>
+- **[mcp-policy-gateway](https://github.com/mzquadri/mcp-policy-gateway)** — Runtime policy enforcement and adversarial evaluation for MCP tool calls <sub>`3 days ago` · Python</sub>
 <!-- AUTO:now:end -->
 
 <sub>Rebuilt daily from push timestamps, so it cannot quietly go stale.</sub>
@@ -165,12 +165,12 @@ does not establish.
 | Repository | Language | Last pushed | |
 |---|---|---|---|
 | [`insureassist-rag-mlops`](https://github.com/mzquadri/insureassist-rag-mlops) | Python | today | Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI, Qdrant, reproducible evaluation, Docker and… |
-| [`drift-aware-ml-platform`](https://github.com/mzquadri/drift-aware-ml-platform) | Python | 2 days ago | Hourly demand forecasting that detects concept drift in its own target and retrains itself. MLflow registry aliases, Evidently, Airflow,… |
-| [`mcp-policy-gateway`](https://github.com/mzquadri/mcp-policy-gateway) | Python | 2 days ago | Runtime policy enforcement and adversarial evaluation for MCP tool calls |
-| [`MLOps-End-to-End-Pipeline`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Python | 5 days ago | End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion gate that can refuse, immutable model bundles, a… |
-| [`munich-accident-forecasting`](https://github.com/mzquadri/munich-accident-forecasting) | Python | 6 days ago | Monthly forecasts for Munich road accident counts, per accident category, with a temporal split, baseline comparison and a FastAPI service |
-| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | 7 days ago | M.Sc. thesis: Uncertainty Quantification for GNN Surrogates of Agent-Based Transport Models (TUM, 2026) |
-| [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | 10 days ago | Personal portfolio source with curated, traceable project links and scoped results |
+| [`drift-aware-ml-platform`](https://github.com/mzquadri/drift-aware-ml-platform) | Python | 3 days ago | Hourly demand forecasting that detects concept drift in its own target and retrains itself. MLflow registry aliases, Evidently, Airflow,… |
+| [`mcp-policy-gateway`](https://github.com/mzquadri/mcp-policy-gateway) | Python | 3 days ago | Runtime policy enforcement and adversarial evaluation for MCP tool calls |
+| [`MLOps-End-to-End-Pipeline`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Python | 6 days ago | End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion gate that can refuse, immutable model bundles, a… |
+| [`munich-accident-forecasting`](https://github.com/mzquadri/munich-accident-forecasting) | Python | 7 days ago | Monthly forecasts for Munich road accident counts, per accident category, with a temporal split, baseline comparison and a FastAPI service |
+| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | 8 days ago | M.Sc. thesis: Uncertainty Quantification for GNN Surrogates of Agent-Based Transport Models (TUM, 2026) |
+| [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | 11 days ago | Personal portfolio source with curated, traceable project links and scoped results |
 | [`UQ-Hydrology-Seminar-TUM`](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | Jupyter Notebook | 2 weeks ago | TUM group seminar project on mathematical uncertainty quantification in hydrology |
 | [`Deep-Learning-Flood-Prediction-LSTM`](https://github.com/mzquadri/Deep-Learning-Flood-Prediction-LSTM) | Python | 2 weeks ago | Controlled LSTM time-series experiment on a synthetic catchment: next-day discharge forecasting scored against day-of-year, persistence and linear… |
 | [`Time-Series-Streamflow-Forecasting`](https://github.com/mzquadri/Time-Series-Streamflow-Forecasting) | Python | 2 weeks ago | Forecasting benchmark on a synthetic daily streamflow series: XGBoost loses to predicting yesterday, a ridge model wins, and the original… |
