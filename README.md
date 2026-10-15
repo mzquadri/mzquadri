@@ -103,8 +103,8 @@ does not establish.
 
 ## Education
 
-**M.Sc. Mathematics in Science and Engineering** &mdash; Technical University of Munich,
-completed August 2026. Thesis at the
+**M.Sc. Mathematics in Science and Engineering** &mdash; Technical University of Munich, 2026.
+Thesis at the
 [Chair of Data Analytics and Machine Learning](https://www.cs.cit.tum.de/en/daml/home/),
 examiner Prof. Dr. Stephan Günnemann. Seminar in Mathematics of Data Science on the
 identification of neural networks, with Prof. Massimo Fornasier and Dr. Alessandro Scagliotti.
