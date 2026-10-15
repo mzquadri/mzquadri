@@ -85,9 +85,16 @@ claims:
     repo: ml_surrogates_for_agent_based_transport_models
     source: docs/UQ_SUMMARY.md
     kind: regex
-    pattern: 'ECE by 90\.5%'
-    shown: "90.5%"
-    note: Temperature scaling, ECE 0.356 -> 0.034.
+    pattern: 'T = 2\.7010, ECE 0\.26874'
+    shown: "82%"
+    note: >
+      The thesis reports a 90.5% ECE reduction under the node30_70_thesis_final
+      protocol (T=2.887, 0.356 -> 0.034). That protocol's split indices were
+      never saved, so the figure cannot be replayed. CORRIGENDUM.md C3 records
+      a second protocol, graph20_80_v1, whose artifacts were kept:
+      scripts/verify_headline_results.py recomputes T = 2.7010 and
+      ECE 0.26874 -> 0.04783, an 82% reduction. This profile quotes the figure
+      a reader can reproduce, not the larger one.
 
   - id: thesis-selective-mae
     repo: ml_surrogates_for_agent_based_transport_models

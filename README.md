@@ -8,16 +8,10 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=19&pause=1400&duration=3600&color=14B8A6&center=true&vCenter=true&width=620&height=42&lines=Uncertainty+quantification+for+ML+systems;Retrieval+that+cites+its+source;Models+that+report+what+they+do+not+know" alt="Uncertainty quantification for ML systems · Retrieval that cites its source · Models that report what they do not know">
-</p>
-
-<p align="center">
-  <a href="https://mzquadri.de"><img src="https://img.shields.io/badge/mzquadri.de-0F766E?style=flat-square&logo=firefox&logoColor=white" alt="Website"></a>
-  <a href="https://www.linkedin.com/in/mohdzaminquadri/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:mohdzaminquadri@gmail.com"><img src="https://img.shields.io/badge/Email-334155?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
-  <img src="https://img.shields.io/badge/Munich-64748B?style=flat-square&logo=googlemaps&logoColor=white" alt="Munich, Germany">
-  <a href="https://github.com/mzquadri?tab=followers"><img src="https://img.shields.io/github/followers/mzquadri?style=flat-square&color=334155&labelColor=1e293b" alt="Followers"></a>
-  <img src="https://komarev.com/ghpvc/?username=mzquadri&style=flat-square&color=0F766E&label=profile+views" alt="Profile views">
+  <a href="https://mzquadri.de"><b>mzquadri.de</b></a> &middot;
+  <a href="https://www.linkedin.com/in/mohdzaminquadri/">LinkedIn</a> &middot;
+  <a href="mailto:mohdzaminquadri@gmail.com">mohdzaminquadri@gmail.com</a> &middot;
+  Munich, Germany
 </p>
 
 ---
@@ -32,10 +26,6 @@ moves away from the data it learned on.
     <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg">
     <img src="assets/stack-light.svg" alt="Python, PyTorch, scikit-learn, FastAPI, Docker, pytest, TypeScript, Kubernetes">
   </picture>
-</p>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=py,pytorch,sklearn,fastapi,postgres,docker,kubernetes,terraform,githubactions,prometheus,grafana,ts,react,linux,bash,git&perline=16" alt="Python, PyTorch, scikit-learn, FastAPI, Postgres, Docker, Kubernetes, Terraform, GitHub Actions, Prometheus, Grafana, TypeScript, React, Linux, Bash, Git">
 </p>
 
 ## How the work is shaped
@@ -78,10 +68,11 @@ does not establish.
 
 | | |
 |---|---|
-| [**ml_surrogates_for_agent_based_transport_models**](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) | M.Sc. thesis. Six uncertainty-quantification methods on a graph neural network traffic surrogate. Calibration error down **90.5%**; withholding the least reliable half of predictions cuts MAE by **41.2%**. Forked from the chair's repository, with my contribution separated out in the README. |
+| [**ml_surrogates_for_agent_based_transport_models**](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) | M.Sc. thesis. Six uncertainty-quantification methods on a graph neural network traffic surrogate of the Paris road network. Post-hoc sigma scaling cuts calibration error by **82%**, measured on the one calibration split whose indices were kept, so a script replays it. Withholding the least reliable half of predictions cuts MAE by **41.2%**. Forked from the chair's repository, with my contribution separated out in the README. |
 | [**mcp-policy-gateway**](https://github.com/mzquadri/mcp-policy-gateway) | Runtime policy enforcement for Model Context Protocol tool calls. Catches **96.2%** of an adversarial corpus at a **9.5%** false positive rate, against a keyword baseline at **38.5%**. **Three scored misses** are kept in the corpus rather than removed. |
 | [**insureassist-rag-mlops**](https://github.com/mzquadri/insureassist-rag-mlops) | Retrieval over insurance policy documents, with citations that resolve to exact character offsets. Hybrid BM25 and dense retrieval; top-document accuracy **0.556**, up **3.3× from the 0.167 starting point**. Hit rate@5 did not improve, and the repository says so. |
 | [**drift-aware-ml-platform**](https://github.com/mzquadri/drift-aware-ml-platform) | Demand forecasting that watches its own target for drift. On this data only 9% of input features move while the target moves **0.679**, so a feature-only monitor would miss a **63% rise** in demand. |
+| [**ai-engineering-portfolio**](https://github.com/mzquadri/ai-engineering-portfolio) | Architecture case studies of four AI workstreams I contributed to at BP-ITCS, with authorship stated per component across five classes. Twenty-two diagrams, an automated check that no credential or internal hostname reaches the public tree, and a file recording which publication decisions were judgement rather than policy. |
 | [**munich-accident-forecasting**](https://github.com/mzquadri/munich-accident-forecasting) | Munich road accident forecasting behind a FastAPI service. CI re-runs the pipeline and fails the build unless it reproduces the committed reference run to **1e-9**. |
 | [**UQ-Hydrology-Seminar-TUM**](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | Group seminar on uncertainty in a calibrated rainfall-runoff model. Rainfall noise barely touches the fit; measurement error in the observed discharge costs **0.148 NSE** and recalibration recovers **5.76%** of it. |
 
@@ -109,6 +100,26 @@ does not establish.
 
 </details>
 <!-- AUTO:claims:end -->
+
+## Education
+
+**M.Sc. Mathematics in Science and Engineering** &mdash; Technical University of Munich,
+completed August 2026. Thesis at the
+[Chair of Data Analytics and Machine Learning](https://www.cs.cit.tum.de/en/daml/home/),
+examiner Prof. Dr. Stephan Günnemann. Seminar in Mathematics of Data Science on the
+identification of neural networks, with Prof. Massimo Fornasier and Dr. Alessandro Scagliotti.
+
+**B.Sc. (Hons.) Mathematics** &mdash; Aligarh Muslim University, 2021, First Division.
+
+## Certificates
+
+| | | |
+|---|---|---|
+| Neural Networks and Deep Learning | DeepLearning.AI &middot; Sep 2024 | [verify](https://www.coursera.org/account/accomplishments/verify/WXJN8I5LFWO1) |
+| Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization | DeepLearning.AI &middot; Sep 2024 | [verify](https://www.coursera.org/account/accomplishments/verify/KU9TUZBNRN9W) |
+| Python for Data Analysis | Udemy &middot; Aug 2024 | |
+| Introduction to SQL | DataCamp &middot; Apr 2022 | |
+| Introduction to Python | DataCamp &middot; Apr 2022 | |
 
 ## Writing
 
@@ -196,47 +207,6 @@ does not establish.
 
 </details>
 
-## Contribution graph
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mzquadri/mzquadri/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mzquadri/mzquadri/output/github-snake.svg">
-  <img src="https://raw.githubusercontent.com/mzquadri/mzquadri/output/github-snake.svg" alt="A snake eating this profile's contribution graph" width="100%">
-</picture>
-
-## Statistics
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=mzquadri&show_icons=true&hide_border=true&theme=github_dark&icon_color=14B8A6&title_color=14B8A6&include_all_commits=true&rank_icon=github">
-    <img src="https://github-readme-stats.vercel.app/api?username=mzquadri&show_icons=true&hide_border=true&theme=default&icon_color=0F766E&title_color=0F766E&include_all_commits=true&rank_icon=github" alt="GitHub statistics" height="165">
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=mzquadri&layout=compact&hide_border=true&theme=github_dark&title_color=14B8A6&langs_count=8">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mzquadri&layout=compact&hide_border=true&theme=default&title_color=0F766E&langs_count=8" alt="Most used languages" height="165">
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=mzquadri&hide_border=true&theme=github-dark&ring=14B8A6&fire=14B8A6&currStreakLabel=14B8A6">
-    <img src="https://streak-stats.demolab.com/?user=mzquadri&hide_border=true&theme=default&ring=0F766E&fire=0F766E&currStreakLabel=0F766E" alt="Contribution streak">
-  </picture>
-</p>
-
-<p align="center">
-  <img src="https://github-trophies.vercel.app/?username=mzquadri&column=7&margin-w=6&margin-h=6&no-bg=true&no-frame=true&theme=flat" alt="GitHub trophies">
-</p>
-
-<p align="center">
-  <img src="https://ghchart.rshah.org/0F766E/mzquadri" alt="Contribution chart for the last year" width="92%">
-</p>
-
-<sub>These cards are rendered by third parties. If one of them is ever blank, the
-weekly <a href="https://github.com/mzquadri/mzquadri/actions/workflows/health.yml"><code>health</code></a>
-workflow has already opened an issue about it — two of the widgets this profile
-originally used went dead that way.</sub>
-
 ---
 
 <p align="center">
@@ -247,5 +217,3 @@ originally used went dead that way.</sub>
   <a href="mailto:mohdzaminquadri@gmail.com">mohdzaminquadri@gmail.com</a> ·
   <a href="https://www.linkedin.com/in/mohdzaminquadri/">LinkedIn</a>
 </p>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F766E,100:5B4B9E&height=110&section=footer" alt="" width="100%">
