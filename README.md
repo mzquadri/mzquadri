@@ -117,9 +117,9 @@ identification of neural networks, with Prof. Massimo Fornasier and Dr. Alessand
 |---|---|---|
 | Neural Networks and Deep Learning | DeepLearning.AI &middot; Sep 2024 | [verify](https://www.coursera.org/account/accomplishments/verify/WXJN8I5LFWO1) |
 | Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization | DeepLearning.AI &middot; Sep 2024 | [verify](https://www.coursera.org/account/accomplishments/verify/KU9TUZBNRN9W) |
-| Python for Data Analysis | Udemy &middot; Aug 2024 | |
-| Introduction to SQL | DataCamp &middot; Apr 2022 | |
-| Introduction to Python | DataCamp &middot; Apr 2022 | |
+| Data Science: Python for Data Analysis Full Bootcamp | Udemy &middot; Aug 2024 | [verify](https://www.udemy.com/certificate/UC-013e2d06-e241-4790-8468-580857efeae9/) |
+| Introduction to SQL | DataCamp &middot; Apr 2022 | [verify](https://www.datacamp.com/statement-of-accomplishment/course/cc6f599bad4e14576d823664f8a722b75ee91f9e) |
+| Introduction to Python | DataCamp &middot; Apr 2022 | [verify](https://www.datacamp.com/statement-of-accomplishment/course/0a2ac762470c3c93bb40aa6c72f43416b713ef02) |
 
 ## Writing
 
