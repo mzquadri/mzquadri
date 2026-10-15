@@ -67,9 +67,9 @@ does not establish.
 ## Currently
 
 <!-- AUTO:now:start -->
-- **[insureassist-rag-mlops](https://github.com/mzquadri/insureassist-rag-mlops)** — Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI,… <sub>`yesterday` · Python</sub>
-- **[drift-aware-ml-platform](https://github.com/mzquadri/drift-aware-ml-platform)** — Hourly demand forecasting that detects concept drift in its own target and retrains itself <sub>`7 days ago` · Python</sub>
-- **[mcp-policy-gateway](https://github.com/mzquadri/mcp-policy-gateway)** — Runtime policy enforcement and adversarial evaluation for MCP tool calls <sub>`7 days ago` · Python</sub>
+- **[medico](https://github.com/mzquadri/medico)** — Research training script for multi-label chest X-ray classification across CheXpert, NIH… <sub>`today` · Python</sub>
+- **[insureassist-rag-mlops](https://github.com/mzquadri/insureassist-rag-mlops)** — Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI,… <sub>`2 days ago` · Python</sub>
+- **[drift-aware-ml-platform](https://github.com/mzquadri/drift-aware-ml-platform)** — Hourly demand forecasting that detects concept drift in its own target and retrains itself <sub>`8 days ago` · Python</sub>
 <!-- AUTO:now:end -->
 
 <sub>Rebuilt daily from push timestamps, so it cannot quietly go stale.</sub>
@@ -164,12 +164,13 @@ does not establish.
 <!-- AUTO:index:start -->
 | Repository | Language | Last pushed | |
 |---|---|---|---|
-| [`insureassist-rag-mlops`](https://github.com/mzquadri/insureassist-rag-mlops) | Python | yesterday | Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI, Qdrant, reproducible evaluation, Docker and… |
-| [`drift-aware-ml-platform`](https://github.com/mzquadri/drift-aware-ml-platform) | Python | 7 days ago | Hourly demand forecasting that detects concept drift in its own target and retrains itself. MLflow registry aliases, Evidently, Airflow,… |
-| [`mcp-policy-gateway`](https://github.com/mzquadri/mcp-policy-gateway) | Python | 7 days ago | Runtime policy enforcement and adversarial evaluation for MCP tool calls |
-| [`MLOps-End-to-End-Pipeline`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Python | 10 days ago | End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion gate that can refuse, immutable model bundles, a… |
-| [`munich-accident-forecasting`](https://github.com/mzquadri/munich-accident-forecasting) | Python | 11 days ago | Monthly forecasts for Munich road accident counts, per accident category, with a temporal split, baseline comparison and a FastAPI service |
-| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | 12 days ago | M.Sc. thesis: Uncertainty Quantification for GNN Surrogates of Agent-Based Transport Models (TUM, 2026) |
+| [`medico`](https://github.com/mzquadri/medico) | Python | today | Research training script for multi-label chest X-ray classification across CheXpert, NIH ChestX-ray14 and a pneumonia set, with masked labels and… |
+| [`insureassist-rag-mlops`](https://github.com/mzquadri/insureassist-rag-mlops) | Python | 2 days ago | Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI, Qdrant, reproducible evaluation, Docker and… |
+| [`drift-aware-ml-platform`](https://github.com/mzquadri/drift-aware-ml-platform) | Python | 8 days ago | Hourly demand forecasting that detects concept drift in its own target and retrains itself. MLflow registry aliases, Evidently, Airflow,… |
+| [`mcp-policy-gateway`](https://github.com/mzquadri/mcp-policy-gateway) | Python | 8 days ago | Runtime policy enforcement and adversarial evaluation for MCP tool calls |
+| [`MLOps-End-to-End-Pipeline`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Python | 11 days ago | End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion gate that can refuse, immutable model bundles, a… |
+| [`munich-accident-forecasting`](https://github.com/mzquadri/munich-accident-forecasting) | Python | 12 days ago | Monthly forecasts for Munich road accident counts, per accident category, with a temporal split, baseline comparison and a FastAPI service |
+| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | 13 days ago | M.Sc. thesis: Uncertainty Quantification for GNN Surrogates of Agent-Based Transport Models (TUM, 2026) |
 | [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | 2 weeks ago | Personal portfolio source with curated, traceable project links and scoped results |
 | [`UQ-Hydrology-Seminar-TUM`](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | Jupyter Notebook | 2 weeks ago | TUM group seminar project on mathematical uncertainty quantification in hydrology |
 | [`Deep-Learning-Flood-Prediction-LSTM`](https://github.com/mzquadri/Deep-Learning-Flood-Prediction-LSTM) | Python | 2 weeks ago | Controlled LSTM time-series experiment on a synthetic catchment: next-day discharge forecasting scored against day-of-year, persistence and linear… |
@@ -181,7 +182,6 @@ does not establish.
 | [`ML-Water-Quality-Classification`](https://github.com/mzquadri/ML-Water-Quality-Classification) | Python | 4 weeks ago | Synthetic-data classification demonstration; not evidence for water-safety decisions |
 | [`Weather-Data-Analytics-EDA`](https://github.com/mzquadri/Weather-Data-Analytics-EDA) | Python | 4 weeks ago | Deterministic synthetic-weather exploratory analysis and visualization demonstration |
 | [`Supply-Chain-Analytics-Dashboard`](https://github.com/mzquadri/Supply-Chain-Analytics-Dashboard) | Python | 4 weeks ago | Exploratory supply-chain analytics prototype with explicit proxy metrics and chronological evaluation |
-| [`medico`](https://github.com/mzquadri/medico) | Python | 4 weeks ago | Research training script for multi-label chest X-ray classification across CheXpert, NIH ChestX-ray14 and a pneumonia set, with masked labels and… |
 | [`ai-engineering-portfolio`](https://github.com/mzquadri/ai-engineering-portfolio) | HTML | 4 weeks ago | Architecture case studies from AI engineering systems I contributed to, spanning verifiable legal knowledge, document intelligence, AI compliance,… |
 | [`snake-water-gun`](https://github.com/mzquadri/snake-water-gun) | Python | 4 weeks ago | Small command-line Snake, Water, Gun Python learning exercise |
 | [`Statistical-Learning-Transportation`](https://github.com/mzquadri/Statistical-Learning-Transportation) | Jupyter Notebook | 5 weeks ago | Coursework for Statistical Learning and Data Analytics for Transportation Systems (M.Sc. Mathematics in Science and Engineering, TUM) - Problem… |
