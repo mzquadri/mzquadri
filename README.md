@@ -57,9 +57,9 @@ does not establish.
 ## Currently
 
 <!-- AUTO:now:start -->
+- **[UQ-Hydrology-Seminar-TUM](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM)** — TUM group seminar project on mathematical uncertainty quantification in hydrology <sub>`today` · Jupyter Notebook</sub>
 - **[ai-engineering-portfolio](https://github.com/mzquadri/ai-engineering-portfolio)** — Architecture case studies from AI engineering systems I contributed to, spanning verifiable legal… <sub>`today` · HTML</sub>
 - **[medico](https://github.com/mzquadri/medico)** — Research training script for multi-label chest X-ray classification across CheXpert, NIH… <sub>`today` · Python</sub>
-- **[ZQ](https://github.com/mzquadri/ZQ)** — Personal portfolio source with curated, traceable project links and scoped results <sub>`today` · TypeScript</sub>
 <!-- AUTO:now:end -->
 
 <sub>Rebuilt daily from push timestamps, so it cannot quietly go stale.</sub>
@@ -175,6 +175,7 @@ identification of neural networks, with Prof. Massimo Fornasier and Dr. Alessand
 <!-- AUTO:index:start -->
 | Repository | Language | Last pushed | |
 |---|---|---|---|
+| [`UQ-Hydrology-Seminar-TUM`](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | Jupyter Notebook | today | TUM group seminar project on mathematical uncertainty quantification in hydrology |
 | [`ai-engineering-portfolio`](https://github.com/mzquadri/ai-engineering-portfolio) | HTML | today | Architecture case studies from AI engineering systems I contributed to, spanning verifiable legal knowledge, document intelligence, AI compliance,… |
 | [`medico`](https://github.com/mzquadri/medico) | Python | today | Research training script for multi-label chest X-ray classification across CheXpert, NIH ChestX-ray14 and a pneumonia set, with masked labels and… |
 | [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | today | Personal portfolio source with curated, traceable project links and scoped results |
@@ -184,10 +185,9 @@ identification of neural networks, with Prof. Massimo Fornasier and Dr. Alessand
 | [`MLOps-End-to-End-Pipeline`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Python | 12 days ago | End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion gate that can refuse, immutable model bundles, a… |
 | [`munich-accident-forecasting`](https://github.com/mzquadri/munich-accident-forecasting) | Python | 13 days ago | Monthly forecasts for Munich road accident counts, per accident category, with a temporal split, baseline comparison and a FastAPI service |
 | [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | 2 weeks ago | M.Sc. thesis: Uncertainty Quantification for GNN Surrogates of Agent-Based Transport Models (TUM, 2026) |
-| [`UQ-Hydrology-Seminar-TUM`](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | Jupyter Notebook | 2 weeks ago | TUM group seminar project on mathematical uncertainty quantification in hydrology |
 | [`Deep-Learning-Flood-Prediction-LSTM`](https://github.com/mzquadri/Deep-Learning-Flood-Prediction-LSTM) | Python | 2 weeks ago | Controlled LSTM time-series experiment on a synthetic catchment: next-day discharge forecasting scored against day-of-year, persistence and linear… |
 | [`Time-Series-Streamflow-Forecasting`](https://github.com/mzquadri/Time-Series-Streamflow-Forecasting) | Python | 2 weeks ago | Forecasting benchmark on a synthetic daily streamflow series: XGBoost loses to predicting yesterday, a ridge model wins, and the original… |
-| [`jobhunter`](https://github.com/mzquadri/jobhunter) | Python | 2 weeks ago | Finds AI/ML jobs worth applying to, scores them against your CV, and drafts the cover letter. FastAPI + Next.js + Postgres on Docker Compose. |
+| [`jobhunter`](https://github.com/mzquadri/jobhunter) | Python | 3 weeks ago | Finds AI/ML jobs worth applying to, scores them against your CV, and drafts the cover letter. FastAPI + Next.js + Postgres on Docker Compose. |
 | [`Neural-Network-Identifiability-Analysis`](https://github.com/mzquadri/Neural-Network-Identifiability-Analysis) | Python | 4 weeks ago | Numerical verification of neural network parameter symmetries: which transformations leave the represented function unchanged, for tanh, sigmoid… |
 | [`Battery-SOC-Estimation-ML`](https://github.com/mzquadri/Battery-SOC-Estimation-ML) | Python | 4 weeks ago | How a state-of-charge benchmark reports a convincing number without the model learning anything: the split, and four features that restate the… |
 | [`Insurance-Claims-Prediction-ML`](https://github.com/mzquadri/Insurance-Claims-Prediction-ML) | Python | 4 weeks ago | Measuring what it costs to choose a decision threshold and a calibrator on the set you report them on. Generated portfolio, known true… |
