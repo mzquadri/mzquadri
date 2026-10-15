@@ -16,8 +16,8 @@
 
     <rect x="76" y="264" width="72" height="4" rx="2" fill="#5eead4"/>
 
-    <text x="76" y="372" font-size="96" font-weight="700" fill="#5eead4">−90.5%</text>
-    <text x="76" y="414" font-size="21" fill="#f1f5f9">calibration error, after temperature scaling</text>
+    <text x="76" y="372" font-size="96" font-weight="700" fill="#5eead4">−82%</text>
+    <text x="76" y="414" font-size="21" fill="#f1f5f9">calibration error, on the protocol that replays</text>
 
     <text x="76" y="564" font-size="18" fill="#64748b">M.Sc. thesis · six UQ methods · TUM</text>
     <text x="1204" y="564" font-size="18" fill="#c4b5fd" text-anchor="end">mzquadri.de</text>

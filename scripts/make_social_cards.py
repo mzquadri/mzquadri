@@ -39,8 +39,14 @@ CARDS = [
         "slug": "ml_surrogates_for_agent_based_transport_models",
         "title": "ml_surrogates",
         "subtitle": "Uncertainty quantification for a GNN transport surrogate",
-        "stat": "−90.5%",
-        "stat_label": "calibration error, after temperature scaling",
+        # Was −90.5%, which is the thesis abstract's figure for the
+        # node30_70_thesis_final protocol. That protocol's split indices were
+        # never saved, so no one can reproduce it. CORRIGENDUM C3 records a
+        # second protocol whose artifacts were kept; verify_headline_results.py
+        # replays it and gets 0.26874 -> 0.04783. claims.yml verifies that one,
+        # so the card has to carry it too or the two disagree.
+        "stat": "−82%",
+        "stat_label": "calibration error, on the protocol that replays",
         "foot": "M.Sc. thesis · six UQ methods · TUM",
     },
     {

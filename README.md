@@ -30,22 +30,13 @@ moves away from the data it learned on.
 
 ## How the work is shaped
 
-```mermaid
-flowchart LR
-    A["Research<br/>and data"] --> B["Modelling<br/>and UQ"]
-    B --> G{{"Does it know what<br/>it does not know?"}}
-    G -- "not yet" --> B
-    G -- "calibrated" --> C["Engineering"]
-    C --> D["Evidence-bound<br/>release"]
-    D -. "drift, recalibration" .-> B
-
-    classDef stage fill:#ede9fe,stroke:#5b4b9e,stroke-width:1.5px,color:#2e2a4a;
-    classDef ship  fill:#ccfbf1,stroke:#0f6b5c,stroke-width:1.5px,color:#0b3d35;
-    classDef gate  fill:#fef3c7,stroke:#92610e,stroke-width:1.5px,color:#4a3a0b;
-    class A,B,C stage;
-    class D ship;
-    class G gate;
-```
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/pipeline-dark.svg">
+    <img src="assets/pipeline-light.svg" width="100%"
+         alt="How the work is shaped: data, then model, then uncertainty, then service.">
+  </picture>
+</p>
 
 Most of what is here carries its own evidence. Where a repository publishes a
 number, something in it checks that number against the files that produced it,
@@ -66,6 +57,66 @@ does not establish.
 
 ## A few things worth opening
 
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/ml_surrogates_for_agent_based_transport_models-dark.svg">
+    <img src="assets/cards/ml_surrogates_for_agent_based_transport_models-light.svg" alt="ml_surrogates — uncertainty for a GNN traffic surrogate, calibration error down 82%" width="100%">
+  </picture>
+</a>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/mzquadri/mcp-policy-gateway">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/mcp-policy-gateway-dark.svg">
+    <img src="assets/cards/mcp-policy-gateway-light.svg" alt="mcp-policy-gateway — policy enforcement for MCP tool calls, 96.2% of an adversarial corpus caught" width="100%">
+  </picture>
+</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/mzquadri/insureassist-rag-mlops">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/insureassist-rag-mlops-dark.svg">
+    <img src="assets/cards/insureassist-rag-mlops-light.svg" alt="insureassist-rag-mlops — retrieval that cites exact character offsets, top-document accuracy 0.556" width="100%">
+  </picture>
+</a>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/mzquadri/drift-aware-ml-platform">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/drift-aware-ml-platform-dark.svg">
+    <img src="assets/cards/drift-aware-ml-platform-light.svg" alt="drift-aware-ml-platform — forecasting that notices its own staleness, target drift 0.679" width="100%">
+  </picture>
+</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/mzquadri/ai-engineering-portfolio">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/ai-engineering-portfolio-dark.svg">
+    <img src="assets/cards/ai-engineering-portfolio-light.svg" alt="ai-engineering-portfolio — architecture case studies, 22 diagrams with authorship per component" width="100%">
+  </picture>
+</a>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/mzquadri/munich-accident-forecasting">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/munich-accident-forecasting-dark.svg">
+    <img src="assets/cards/munich-accident-forecasting-light.svg" alt="munich-accident-forecasting — forecasts that argue against their own headline, reproduced to 1e-9" width="100%">
+  </picture>
+</a>
+</td>
+</tr>
+</table>
+
+<details>
+<summary>The same six, and what each one does not establish</summary>
+
 | | |
 |---|---|
 | [**ml_surrogates_for_agent_based_transport_models**](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) | M.Sc. thesis. Six uncertainty-quantification methods on a graph neural network traffic surrogate of the Paris road network. Post-hoc sigma scaling cuts calibration error by **82%**, measured on the one calibration split whose indices were kept, so a script replays it. Withholding the least reliable half of predictions cuts MAE by **41.2%**. Forked from the chair's repository, with my contribution separated out in the README. |
@@ -75,6 +126,8 @@ does not establish.
 | [**ai-engineering-portfolio**](https://github.com/mzquadri/ai-engineering-portfolio) | Architecture case studies of four AI workstreams I contributed to at BP-ITCS, with authorship stated per component across five classes. Twenty-two diagrams, an automated check that no credential or internal hostname reaches the public tree, and a file recording which publication decisions were judgement rather than policy. |
 | [**munich-accident-forecasting**](https://github.com/mzquadri/munich-accident-forecasting) | Munich road accident forecasting behind a FastAPI service. CI re-runs the pipeline and fails the build unless it reproduces the committed reference run to **1e-9**. |
 | [**UQ-Hydrology-Seminar-TUM**](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | Group seminar on uncertainty in a calibrated rainfall-runoff model. Rainfall noise barely touches the fit; measurement error in the observed discharge costs **0.148 NSE** and recalibration recovers **5.76%** of it. |
+
+</details>
 
 <!-- AUTO:claims:start -->
 `13/13` figures on this page were re-checked against the file that produced them, by the workflow that built this line.
