@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="300" viewBox="0 0 880 300" role="img" aria-label="Adversarial tool calls caught">
+<rect width="880" height="300" fill="#0E1116"/>
+<text x="60" y="34" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#E8EDF2">Adversarial tool calls caught</text>
+<text x="60" y="56" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" fill="#8B97A6">47-case corpus: 26 attacks, 21 benign, 10 attack classes.</text>
+<text x="194" y="134.0" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#E8EDF2">policy gateway</text>
+<rect x="210" y="110.0" width="578" height="38.0" rx="4" fill="#1B2430"/>
+<rect x="210" y="110.0" width="0" height="38.0" rx="4" fill="#00897B"><animate attributeName="width" from="0" to="556.0" dur="1.05s" begin="0.25s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.61 0.36 1"/></rect>
+<text x="778.0" y="135.0" font-family="Cascadia Mono, Consolas, monospace" font-size="17" font-weight="700" fill="#00897B" opacity="0">96.2%<animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.20s" fill="freeze"/></text>
+<text x="194" y="192.0" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#E8EDF2">keyword baseline</text>
+<rect x="210" y="168.0" width="578" height="38.0" rx="4" fill="#1B2430"/>
+<rect x="210" y="168.0" width="0" height="38.0" rx="4" fill="#C2410C"><animate attributeName="width" from="0" to="222.5" dur="1.05s" begin="0.47s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.61 0.36 1"/></rect>
+<text x="444.5" y="193.0" font-family="Cascadia Mono, Consolas, monospace" font-size="17" font-weight="700" fill="#C2410C" opacity="0">38.5%<animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.42s" fill="freeze"/></text>
+<line x1="210" y1="260" x2="788" y2="260" stroke="#263040" stroke-width="1"/>
+<text x="210" y="280" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#8B97A6">share of attacks caught →</text>
+<text x="788" y="280" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#8B97A6">at 9.5% false positives; three scored misses are kept in the corpus</text>
+</svg>
