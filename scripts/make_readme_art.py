@@ -184,8 +184,8 @@ CARDS = [
         "slug": "insureassist-rag-mlops",
         "name": "insureassist-rag-mlops",
         "line": "Retrieval that cites exact character offsets",
-        "stat": "0.556",
-        "stat_label": "top-document accuracy, from 0.167",
+        "stat": "0.420",
+        "stat_label": "MRR, up from 0.365 for dense alone",
     },
     {
         "slug": "drift-aware-ml-platform",

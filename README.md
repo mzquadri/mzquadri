@@ -116,7 +116,9 @@ with the parser it checks.
   <img alt="Mean reciprocal rank: fused 0.420, BM25 only 0.366, dense only 0.365" src="assets/chart-retrieval-light.svg">
 </picture>
 
-Top-document accuracy reached **0.556**, **3.3× from the 0.167 starting point**.
+Top-document accuracy reached **0.556**, **3.3× from the 0.167 starting point** — on the
+chunk size, not the fusion. Dense retrieval alone reaches the same 0.556 once each provision
+keeps its form-identifying context. What fusion earned is the ranking: **MRR 0.365 → 0.420**.
 Hit rate@5 did not improve, and the benchmark says so.
 
 ### A gateway that refuses dangerous tool calls

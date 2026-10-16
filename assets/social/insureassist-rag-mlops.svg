@@ -16,10 +16,10 @@
 
     <rect x="76" y="264" width="72" height="4" rx="2" fill="#5eead4"/>
 
-    <text x="76" y="372" font-size="96" font-weight="700" fill="#5eead4">0.556</text>
-    <text x="76" y="414" font-size="21" fill="#f1f5f9">top-document accuracy, 3.3× the 0.167 starting point</text>
+    <text x="76" y="372" font-size="96" font-weight="700" fill="#5eead4">0.420</text>
+    <text x="76" y="414" font-size="21" fill="#f1f5f9">MRR, against 0.365 and 0.366 for either retriever alone</text>
 
-    <text x="76" y="564" font-size="18" fill="#64748b">hybrid BM25 + dense · hit rate@5 did not improve, and it says so</text>
+    <text x="76" y="564" font-size="18" fill="#64748b">top-document 0.556 came from the chunk size · hit rate@5 did not improve</text>
     <text x="1204" y="564" font-size="18" fill="#c4b5fd" text-anchor="end">mzquadri.de</text>
   </g>
 </svg>

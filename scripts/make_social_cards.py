@@ -61,9 +61,9 @@ CARDS = [
         "slug": "insureassist-rag-mlops",
         "title": "insureassist-rag-mlops",
         "subtitle": "Retrieval over policy documents, with citations that resolve",
-        "stat": "0.556",
-        "stat_label": "top-document accuracy, 3.3× the 0.167 starting point",
-        "foot": "hybrid BM25 + dense · hit rate@5 did not improve, and it says so",
+        "stat": "0.420",
+        "stat_label": "MRR, against 0.365 and 0.366 for either retriever alone",
+        "foot": "top-document 0.556 came from the chunk size · hit rate@5 did not improve",
     },
     {
         "slug": "drift-aware-ml-platform",
