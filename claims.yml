@@ -179,3 +179,30 @@ claims:
     kind: regex
     pattern: 'recalibration recovers 5\.76% of the loss'
     shown: "5.76%"
+
+  # --- munich-accident-forecasting: the re-run that argues with the headline ---
+  - id: munich-published-margin
+    repo: munich-accident-forecasting
+    source: results/pandemic_free_run.json
+    kind: json
+    key: windows.published.margin_over_seasonal_naive_scaled_mae
+    expect: 0.234414
+    tol: 0.0005
+    shown: "+23.4%"
+
+  - id: munich-prepandemic-margin
+    repo: munich-accident-forecasting
+    source: results/pandemic_free_run.json
+    kind: json
+    key: windows.pandemic_free.margin_over_seasonal_naive_scaled_mae
+    expect: -0.155261
+    tol: 0.0005
+    shown: "−15.5%"
+
+  # --- MLOps-End-to-End-Pipeline ---------------------------------------
+  - id: mlops-test-auc
+    repo: MLOps-End-to-End-Pipeline
+    source: README.md
+    kind: regex
+    pattern: '0\.8795'
+    shown: "0.8795"

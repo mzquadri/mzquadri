@@ -39,9 +39,10 @@ jobs:
       - name: Install dependencies
         run: pip install --quiet pyyaml
 
-      - name: Regenerate the hero banner
-        run: python scripts/make_hero.py
-
+      # The hero banner and the project cards are no longer generated here.
+      # They are rendered from _portfolio-work/github/build.html with real
+      # fonts and the real Paris export, which needs a browser; CI regenerates
+      # only the three text blocks on REPOSITORIES.md.
       - name: Refresh the generated blocks
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

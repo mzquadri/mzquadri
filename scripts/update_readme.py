@@ -4,14 +4,14 @@
 Three blocks, each delimited by markers so the hand-written prose around them is
 never touched:
 
-  AUTO:now      README.md       — the few repositories last pushed to, with how long ago
+  AUTO:now      REPOSITORIES.md — the few repositories last pushed to, with how long ago
   AUTO:index    REPOSITORIES.md — every public repository, language and one-line description
-  AUTO:writing  README.md       — the articles on mzquadri.de, grouped by subject
+  AUTO:writing  REPOSITORIES.md — the articles on mzquadri.de, grouped by subject
 
-The index is generated into REPOSITORIES.md rather than README.md. It still
-lists everything, forks and teaching exercises included, but the front page is
-not the place for it: a visitor who lands on the profile should meet the work,
-not an inventory. Nothing was dropped from the list, only moved off page one.
+All three generate into REPOSITORIES.md. README.md is a designed page now --
+a banner, six project cards, the certificates and the links -- and a block that
+rewrites itself daily inside a composed layout would eventually break it.
+Nothing was dropped from any of the three lists; they moved off page one.
 
 The "currently working on" line is the section of a profile most likely to go
 stale, so this derives it from push timestamps instead of asking anyone to
@@ -244,24 +244,15 @@ def main() -> int:
         print(f"could not reach the GitHub API: {exc}", file=sys.stderr)
         return 2
 
-    before = README.read_text(encoding="utf-8")
-    after = splice(before, "now", block_now(rs, now))
+    index_before = INDEX_PAGE.read_text(encoding="utf-8")
+    index_after = splice(index_before, "now", block_now(rs, now), INDEX_PAGE.name)
+    index_after = splice(index_after, "index", block_index(rs, now), INDEX_PAGE.name)
 
     writing = block_writing(articles())
     if writing is not None:
-        after = splice(after, "writing", writing)
+        index_after = splice(index_after, "writing", writing, INDEX_PAGE.name)
 
-    index_before = INDEX_PAGE.read_text(encoding="utf-8")
-    index_after = splice(index_before, "index", block_index(rs, now), INDEX_PAGE.name)
-
-    stale = [
-        name
-        for name, old, new in (
-            (README.name, before, after),
-            (INDEX_PAGE.name, index_before, index_after),
-        )
-        if old != new
-    ]
+    stale = [INDEX_PAGE.name] if index_before != index_after else []
 
     if args.check:
         if stale:
@@ -274,10 +265,7 @@ def main() -> int:
         print("no change")
         return 0
 
-    if before != after:
-        README.write_text(after, encoding="utf-8")
-    if index_before != index_after:
-        INDEX_PAGE.write_text(index_after, encoding="utf-8")
+    INDEX_PAGE.write_text(index_after, encoding="utf-8")
     print(f"updated {', '.join(stale)} from {len(rs)} repositories")
     return 0
 

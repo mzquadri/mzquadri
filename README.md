@@ -1,200 +1,107 @@
 <!--
-  This file is generated-adjacent: the art is produced by scripts/, and every
-  number in it is checked by scripts/verify_claims.py against the repository
-  that produced it. Adding a figure here without a matching entry in claims.yml
-  fails CI, which is the point — a number nothing verifies is a claim, not a
-  result.
+  Short by design. A visitor should know what I do in about twenty seconds:
+  one banner, six cards, five certificates, four links. Nothing else.
 
-  Animations are self-hosted. GitHub strips <script> from SVG but runs SMIL, and
-  autoplays animated WebP, so everything below moves without a widget service.
-  Two of those died on this profile already.
+  Every number on this page is re-checked against the file in the repository
+  that produced it by scripts/verify_claims.py, and the certificate list is a
+  closed set in claims.yml. A figure nothing verifies is a claim, not a result.
+
+  The images come out of one source, _portfolio-work/github/build.html, in a
+  light and a dark variant so the two cannot drift apart. The banner is an
+  animated WebP: GitHub autoplays those through its image proxy, where a
+  <script> inside an SVG is stripped. Everything is served from this
+  repository — two third-party widget services on this profile went dead once
+  already, which is why none are used.
+
+  The generated lists — recent pushes, every repository, the writing — live on
+  REPOSITORIES.md. A block that rewrites itself daily inside a composed layout
+  would eventually break the layout.
 -->
 
-<h1>Mohd Zamin Quadri</h1>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.webp">
+  <img alt="Mohd Zamin Quadri, machine learning engineer. A rotating three-dimensional view of all 31,635 Paris road segments, each lifted and coloured by the model's own MC Dropout uncertainty." src="assets/banner-light.webp">
+</picture>
 
-<p>
-  <b>Machine learning engineer.</b> I build models that say how sure they are —
-  and the pipelines, services and checks around them that keep that honest.<br>
-  M.Sc. Mathematics in Science and Engineering, Technical University of Munich, 2026.
+<p align="center">
+  <b>Machine learning engineer.</b> I build models that report what they do not know —
+  and the pipelines, services and checks that keep that honest.<br>
+  <sub>M.Sc. Mathematics in Science and Engineering, Technical University of Munich, 2026</sub>
 </p>
 
-<p>
-  <a href="https://mzquadri.de"><b>Interactive version on mzquadri.de →</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/mohdzaminquadri/">LinkedIn</a>
-  &nbsp;·&nbsp;
-  <a href="mailto:mohdzaminquadri@gmail.com">mohdzaminquadri@gmail.com</a>
+<p align="center">
+  <a href="https://mzquadri.de"><b>mzquadri.de</b></a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/mohdzaminquadri/">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="mailto:mohdzaminquadri@gmail.com">mohdzaminquadri@gmail.com</a> &nbsp;·&nbsp;
+  <a href="REPOSITORIES.md">all repositories</a>
 </p>
 
 ---
 
-## Now
-
-<!-- AUTO:now:start -->
-- **[insureassist-rag-mlops](https://github.com/mzquadri/insureassist-rag-mlops)** — Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI,… <sub>`today` · Python</sub>
-- **[ZQ](https://github.com/mzquadri/ZQ)** — Personal portfolio source with curated, traceable project links and scoped results <sub>`today` · TypeScript</sub>
-- **[UQ-Hydrology-Seminar-TUM](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM)** — TUM group seminar project on mathematical uncertainty quantification in hydrology <sub>`today` · Jupyter Notebook</sub>
-<!-- AUTO:now:end -->
-
----
-
-## How I work
-
-Ten stages, in the order the work actually happens. Every count is a real one.
-
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/pipeline-iso-dark.svg">
-  <img alt="An isometric diagram of a machine learning pipeline: sources, ingestion, validation, features, graph build, training, evaluation, uncertainty, serving and monitoring, with data packets flowing between the stages" src="assets/pipeline-iso-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/ml_surrogates_for_agent_based_transport_models-dark.png">
+  <img alt="Uncertainty for a traffic surrogate. Expected calibration error falls from 0.269 to 0.048, 82% lower." src="assets/cards/ml_surrogates_for_agent_based_transport_models-light.png">
 </picture>
-
-The last three stages are the ones most portfolios skip. They are the ones that
-decide whether a model is usable.
-
----
-
-## The thesis — uncertainty for a traffic surrogate
-
-A graph network predicts how Paris traffic shifts when a lane closes, in
-milliseconds instead of hours. The question I spent a year on was not whether it
-is accurate. It was whether it knows when it is wrong.
-
+</a>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/mzquadri/mcp-policy-gateway">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/scenes/paris-graph-dark.webp">
-  <img alt="A rotating three-dimensional view of the Paris road network, with road segments rising by the model's predicted uncertainty" src="assets/scenes/paris-graph-light.webp">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/mcp-policy-gateway-dark.png">
+  <img alt="A gateway that refuses. 96.2% of an adversarial corpus caught, against a keyword filter's 38.5%." src="assets/cards/mcp-policy-gateway-light.png">
 </picture>
-
-All 31,635 road segments. Height and colour are MC Dropout sigma — the model's
-own estimate of where it is guessing.
-
+</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/mzquadri/insureassist-rag-mlops">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/chart-calibration-dark.svg">
-  <img alt="Calibration error before and after sigma scaling: 0.269 falls to 0.048" src="assets/chart-calibration-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/insureassist-rag-mlops-dark.png">
+  <img alt="Retrieval that cites its sources. Mean reciprocal rank 0.420 fused, against 0.366 BM25 only and 0.365 dense only." src="assets/cards/insureassist-rag-mlops-light.png">
 </picture>
-
-One scalar, fitted on twenty held-out graphs, cuts calibration error by **82%**.
-Rank the predictions by uncertainty, keep the most certain half and send the rest
-to the full simulator, and error on what you keep falls **41.2%**.
-
+</a>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/mzquadri/drift-aware-ml-platform">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/scenes/gnn-layers-dark.webp">
-  <img alt="Six message-passing layers of the graph network, with messages travelling between neighbouring nodes layer by layer" src="assets/scenes/gnn-layers-light.webp">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/drift-aware-ml-platform-dark.png">
+  <img alt="Drift in the target, not the features. 0.679 target drift while only 9% of input features move." src="assets/cards/drift-aware-ml-platform-light.png">
 </picture>
+</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/mzquadri/munich-accident-forecasting">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/munich-accident-forecasting-dark.png">
+  <img alt="Forecasts that argue with themselves. A published margin of plus 23.4% becomes minus 15.5% when the same protocol is re-run on ordinary pre-pandemic years." src="assets/cards/munich-accident-forecasting-light.png">
+</picture>
+</a>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/mzquadri/MLOps-End-to-End-Pipeline">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/MLOps-End-to-End-Pipeline-dark.png">
+  <img alt="A promotion gate that can refuse. ROC-AUC 0.8795 on the held-out split, behind a gate that requires a margin over a baseline." src="assets/cards/MLOps-End-to-End-Pipeline-light.png">
+</picture>
+</a>
+</td>
+</tr>
+</table>
 
-<sub>The PointNetTransfGAT surrogate, the MATSim preprocessing and the base
-training pipeline are upstream work by Elena Natterer et al. The uncertainty
+<sub>The PointNetTransfGAT surrogate, the MATSim preprocessing and the base training
+pipeline in the thesis are upstream work by <b>Elena Natterer et al.</b> The uncertainty
 layer on top of them is mine.</sub>
 
-**[Read the repository →](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models)**
-&nbsp;·&nbsp; thirteen corrections are published in its corrigendum, including two
-I found while building this page.
-
 ---
 
-## BP-IT Consulting — Apr 2025 to Sep 2026
-
-Retrieval services over vector and graph databases, an OCR and LLM extraction
-pipeline, and a chest X-ray classifier — with the Docker and CI they ran on.
-
-The piece I am most pleased with is a verification layer: fourteen gates that
-check what was stored against what the publisher actually served, including an
-oracle built on a deliberately different XML stack so it cannot share a defect
-with the parser it checks.
-
----
-
-## Selected work
-
-### Retrieval that cites its sources
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/scenes/rag-retrieval-dark.webp">
-  <img alt="A query fanning out to BM25 and dense retrievers, fused by reciprocal rank, producing an answer with citations" src="assets/scenes/rag-retrieval-light.webp">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/chart-retrieval-dark.svg">
-  <img alt="Mean reciprocal rank: fused 0.420, BM25 only 0.366, dense only 0.365" src="assets/chart-retrieval-light.svg">
-</picture>
-
-Top-document accuracy reached **0.556**, **3.3× from the 0.167 starting point** — on the
-chunk size, not the fusion. Dense retrieval alone reaches the same 0.556 once each provision
-keeps its form-identifying context. What fusion earned is the ranking: **MRR 0.365 → 0.420**.
-Hit rate@5 did not improve, and the benchmark says so.
-
-### A gateway that refuses dangerous tool calls
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/chart-gateway-dark.svg">
-  <img alt="Share of adversarial tool calls caught: policy gateway 96.2 percent, keyword baseline 38.5 percent" src="assets/chart-gateway-light.svg">
-</picture>
-
-**96.2%** of an adversarial corpus caught at **9.5%** false positives, against a
-keyword baseline of **38.5%**. Three scored misses are kept in the corpus rather
-than deleted from it.
-
-### The rest
-
-| Repository | What it is | The number it earned |
-|---|---|---|
-| [drift-aware-ml-platform](https://github.com/mzquadri/drift-aware-ml-platform) | Forecasting that watches its own target for drift | **0.679** target drift while only 9% of input features move — a feature-only monitor would miss a **63% rise** in demand |
-| [munich-accident-forecasting](https://github.com/mzquadri/munich-accident-forecasting) | Munich road-accident forecasting behind a FastAPI service | CI reproduces the reference run to **1e-9** tolerance, or fails |
-| [UQ-Hydrology-Seminar-TUM](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | Where a calibrated rainfall-runoff model's skill actually goes | **0.148 NSE** lost to observation error, not rainfall noise; recalibration recovers **5.76%** |
-| [mcp-policy-gateway](https://github.com/mzquadri/mcp-policy-gateway) | Runtime policy enforcement for MCP tool calls | scored against an external corpus as well as its own |
-| [insureassist-rag-mlops](https://github.com/mzquadri/insureassist-rag-mlops) | Retrieval over policy documents, with citations that resolve | every citation points at text that was actually retrieved |
-
-
----
-
-## Writing
-
-<!-- AUTO:writing:start -->
-**13 pieces** at [mzquadri.de/learn](https://mzquadri.de/learn), grouped by what they are about.
-
-**Backend and Distributed Systems**
-
-- [Designing Replay as a Normal Path](https://mzquadri.de/learn/designing-replay-as-a-normal-path)
-- [Idempotent Ingestion Across Heterogeneous Stores](https://mzquadri.de/learn/idempotent-ingestion-across-heterogeneous-stores)
-
-**Document Intelligence**
-
-- [Template-Driven Document Extraction With LLMs](https://mzquadri.de/learn/template-driven-document-extraction)
-
-**Explainable AI**
-
-- [What a Saliency Map Does Not Prove](https://mzquadri.de/learn/what-a-saliency-map-does-not-prove)
-
-**MLOps**
-
-- [Promotion Gates for Model Release](https://mzquadri.de/learn/promotion-gates-for-model-release)
-
-**Machine Learning**
-
-- [Calibration Is Not Classification Accuracy](https://mzquadri.de/learn/calibration-is-not-classification-accuracy)
-
-**Reliable AI Systems**
-
-- [Building an Independent Verification Oracle](https://mzquadri.de/learn/building-an-independent-verification-oracle)
-- [Equal Counts Do Not Prove Two Stores Agree](https://mzquadri.de/learn/equal-counts-do-not-prove-two-stores-agree)
-- [Evidence Provenance for Knowledge Systems](https://mzquadri.de/learn/evidence-provenance-for-knowledge-systems)
-- [Production AI Systems Need Refusal Paths](https://mzquadri.de/learn/refusal-paths-in-production-ai-systems)
-- [Re-ingest, Verify, Reconcile, Withdraw](https://mzquadri.de/learn/reingest-verify-reconcile-withdraw)
-
-**Retrieval and Grounded Generation**
-
-- [Hybrid Retrieval Without Silent Failure](https://mzquadri.de/learn/hybrid-retrieval-without-silent-failure)
-
-**Uncertainty Quantification**
-
-- [Selective Prediction: When Models Should Abstain](https://mzquadri.de/learn/selective-prediction-when-models-should-abstain)
-<!-- AUTO:writing:end -->
-
----
-
-## Certificates
-
-Five, each with the page that verifies it. The list is asserted against
-`claims.yml` by `verify_claims.py` — a certificate this page claims and that
-file does not is a build failure.
+### Certificates
 
 <!-- CERTIFICATES:start -->
 | | | |
@@ -208,17 +115,22 @@ file does not is a build failure.
 
 ---
 
-<p>
-  <a href="https://mzquadri.de"><b>mzquadri.de</b></a> &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/mohdzaminquadri/">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="mailto:mohdzaminquadri@gmail.com">mohdzaminquadri@gmail.com</a> &nbsp;·&nbsp;
-  <a href="REPOSITORIES.md">all repositories</a>
-</p>
+<details>
+<summary><b>Every number above, and the file it was checked against</b></summary>
 
-<sub>
-  Every figure on this page is checked by
-  <a href="scripts/verify_claims.py"><code>verify_claims.py</code></a> against the
-  repository that produced it. The animations are generated by
-  <a href="scripts/"><code>scripts/</code></a> and served from this repository —
-  no third-party widgets, which is why nothing here can go dark when a service does.
-</sub>
+<br>
+
+Re-read from the repository that produced it on every push and once a day. The card is
+the headline; this is the receipt.
+
+| Shown | Checked against |
+|---|---|
+| Calibration error 0.269 to 0.048, **82%** lower, and error on the half it keeps **41.2%** lower | `ml_surrogates_…/docs/UQ_SUMMARY.md` |
+| **96.2%** of an adversarial corpus caught at **9.5%** false positives, against a keyword filter's **38.5%**. **Three scored misses** stay in the corpus rather than being deleted from it | `mcp-policy-gateway/assets/summary.json` |
+| Top-document accuracy **0.556**, **3.3× from the 0.167 starting point** — earned by the chunk size, not the fusion. What fusion earned is the ranking | `insureassist-rag-mlops/eval/reference_run.json` |
+| **0.679** target drift while only 9% of input features move; a feature-only monitor would miss a **63% rise** in demand | `drift-aware-ml-platform/README.md` |
+| A published margin of **+23.4%** becomes **−15.5%** when the same protocol is re-run on ordinary years. CI reproduces the published run to **1e-9** or fails | `munich-accident-forecasting/results/pandemic_free_run.json` |
+| **0.8795** ROC-AUC on the held-out split | `MLOps-End-to-End-Pipeline/README.md` |
+| **0.148 NSE** lost to observation error rather than rainfall noise, and recalibration recovers **5.76%** | `UQ-Hydrology-Seminar-TUM/README.md` |
+
+</details>
