@@ -175,6 +175,62 @@ def check_derived(claim: dict, text: str) -> tuple[Any, str]:
 
 CHECKERS = {"json": check_json, "regex": check_regex, "derived": check_derived}
 
+CERT_START = "<!-- CERTIFICATES:start -->"
+CERT_END = "<!-- CERTIFICATES:end -->"
+CERT_ROW = re.compile(r"^\|\s*(?P<name>[^|]+?)\s*\|[^|]*\|\s*\[verify\]\((?P<url>[^)]+)\)\s*\|$")
+
+
+def check_certificates(spec: dict, readme: str) -> list[str]:
+    """Assert the Certificates table in README.md is exactly the list in claims.yml.
+
+    Returns a list of problems; empty means it matches.
+
+    This is a set comparison in both directions, which is the point. Checking
+    only that each held certificate appears would pass a table that also lists
+    three that are not held — which is the error this was written for. Checking
+    only the count would pass a substitution.
+    """
+    declared = spec.get("certificates")
+    if not declared:
+        return ["claims.yml has no `certificates` list to check the README against"]
+
+    try:
+        table = readme.split(CERT_START, 1)[1].split(CERT_END, 1)[0]
+    except IndexError:
+        return [f"README.md is missing the {CERT_START} / {CERT_END} markers"]
+
+    rendered: dict[str, str] = {}
+    problems: list[str] = []
+    for line in table.splitlines():
+        line = line.strip()
+        if not line.startswith("|") or set(line) <= set("|- "):
+            continue
+        m = CERT_ROW.match(line)
+        if not m:
+            problems.append(f"certificate row is not name / issuer / [verify](url): {line}")
+            continue
+        name = m.group("name").replace("&middot;", "·").strip()
+        if name in rendered:
+            problems.append(f"certificate listed twice: {name!r}")
+        rendered[name] = m.group("url").strip()
+
+    expected = {str(c["name"]): str(c["verify"]) for c in declared}
+
+    for name in sorted(set(rendered) - set(expected)):
+        problems.append(
+            f"README.md claims a certificate that claims.yml does not list: {name!r}"
+        )
+    for name in sorted(set(expected) - set(rendered)):
+        problems.append(f"README.md no longer lists the certificate {name!r}")
+    for name in sorted(set(expected) & set(rendered)):
+        if rendered[name] != expected[name]:
+            problems.append(
+                f"{name!r} verifies at {rendered[name]} in README.md, "
+                f"{expected[name]} in claims.yml"
+            )
+
+    return problems
+
 
 def main() -> int:
     ap = argparse.ArgumentParser()
@@ -216,8 +272,21 @@ def main() -> int:
             failures.append((cid, str(exc)))
             print(f"  FAIL  {cid:22s} {repo}/{source}\n          {exc}")
 
+    numeric_failures = len(failures)
+    certs = spec.get("certificates") or []
+    cert_problems = check_certificates(spec, readme)
+    for msg in cert_problems:
+        failures.append(("certificates", msg))
+        print(f"  FAIL  {'certificates':22s} claims.yml\n          {msg}")
+    if not cert_problems:
+        print(f"  ok    {'certificates':22s} claims.yml ({len(certs)} held, {len(certs)} shown)")
+
     print()
-    print(f"{len(claims) - len(failures)}/{len(claims)} claims verified against source.")
+    print(f"{len(claims) - numeric_failures}/{len(claims)} claims verified against source.")
+    print(
+        f"{len(certs) if not cert_problems else 0}/{len(certs)} "
+        "certificates in README.md match the list that is held."
+    )
 
     if args.report:
         write_report(rows, len(failures))

@@ -12,9 +12,37 @@
 #   derived extract named numbers by regex, evaluate an expression, compare
 #
 # `shown` is the exact substring that must appear in README.md.
+#
+# `certificates` is a different kind of check and does not reach the network.
+# It is the closed list of qualifications held, and verify_claims.py asserts the
+# Certificates table in README.md matches it exactly — same names, same verify
+# links, nothing extra. It exists because the opposite happened: a README
+# rewrite replaced the verified table with three plausible course names that
+# were never held, and no check noticed. Set membership, not substring
+# matching, is what catches that: an invented row is a row that is not here.
+#
+# Source of record: _portfolio-work/CERTIFICATES.md, every link opened and read
+# on 15 October 2026. Adding a row needs a credential URL that resolves.
 
 defaults:
   branch: main
+
+certificates:
+  - name: Neural Networks and Deep Learning
+    issuer: DeepLearning.AI
+    verify: https://www.coursera.org/account/accomplishments/verify/WXJN8I5LFWO1
+  - name: "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization"
+    issuer: DeepLearning.AI
+    verify: https://www.coursera.org/account/accomplishments/verify/KU9TUZBNRN9W
+  - name: "Data Science: Python for Data Analysis Full Bootcamp"
+    issuer: Udemy
+    verify: https://www.udemy.com/certificate/UC-013e2d06-e241-4790-8468-580857efeae9/
+  - name: Introduction to SQL
+    issuer: DataCamp
+    verify: https://www.datacamp.com/statement-of-accomplishment/course/cc6f599bad4e14576d823664f8a722b75ee91f9e
+  - name: Introduction to Python
+    issuer: DataCamp
+    verify: https://www.datacamp.com/statement-of-accomplishment/course/0a2ac762470c3c93bb40aa6c72f43416b713ef02
 
 claims:
   # --- mcp-policy-gateway -------------------------------------------------
