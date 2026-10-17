@@ -11,16 +11,16 @@ a visitor sees.
 <!-- AUTO:index:start -->
 | Repository | Language | Last pushed | |
 |---|---|---|---|
-| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | today | M.Sc. thesis: Uncertainty Quantification for Machine Learning Models in Transportation Policy Analysis (TUM, 2026). Uncertainty layer over a… |
+| [`ai-engineering-portfolio`](https://github.com/mzquadri/ai-engineering-portfolio) | HTML | today | Architecture case studies from AI engineering systems I contributed to, spanning verifiable legal knowledge, document intelligence, AI compliance,… |
+| [`MLOps-End-to-End-Pipeline`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Python | today | End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion gate that can refuse, immutable model bundles, a… |
+| [`munich-accident-forecasting`](https://github.com/mzquadri/munich-accident-forecasting) | Python | today | Monthly forecasts for Munich road accident counts, per accident category, with a temporal split, baseline comparison and a FastAPI service |
+| [`drift-aware-ml-platform`](https://github.com/mzquadri/drift-aware-ml-platform) | Python | today | Hourly demand forecasting that detects concept drift in its own target and retrains itself. MLflow registry aliases, Evidently, Airflow,… |
 | [`insureassist-rag-mlops`](https://github.com/mzquadri/insureassist-rag-mlops) | Python | today | Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI, Qdrant, reproducible evaluation, Docker and… |
-| [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | today | Personal portfolio source with curated, traceable project links and scoped results |
+| [`mcp-policy-gateway`](https://github.com/mzquadri/mcp-policy-gateway) | Python | today | Runtime policy enforcement and adversarial evaluation for MCP tool calls |
+| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | today | M.Sc. thesis: Uncertainty Quantification for Machine Learning Models in Transportation Policy Analysis (TUM, 2026). Uncertainty layer over a… |
+| [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | yesterday | Personal portfolio source with curated, traceable project links and scoped results |
 | [`UQ-Hydrology-Seminar-TUM`](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | Jupyter Notebook | yesterday | TUM group seminar project on mathematical uncertainty quantification in hydrology |
-| [`ai-engineering-portfolio`](https://github.com/mzquadri/ai-engineering-portfolio) | HTML | yesterday | Architecture case studies from AI engineering systems I contributed to, spanning verifiable legal knowledge, document intelligence, AI compliance,… |
 | [`medico`](https://github.com/mzquadri/medico) | Python | yesterday | Research training script for multi-label chest X-ray classification across CheXpert, NIH ChestX-ray14 and a pneumonia set, with masked labels and… |
-| [`drift-aware-ml-platform`](https://github.com/mzquadri/drift-aware-ml-platform) | Python | 9 days ago | Hourly demand forecasting that detects concept drift in its own target and retrains itself. MLflow registry aliases, Evidently, Airflow,… |
-| [`mcp-policy-gateway`](https://github.com/mzquadri/mcp-policy-gateway) | Python | 9 days ago | Runtime policy enforcement and adversarial evaluation for MCP tool calls |
-| [`MLOps-End-to-End-Pipeline`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Python | 13 days ago | End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion gate that can refuse, immutable model bundles, a… |
-| [`munich-accident-forecasting`](https://github.com/mzquadri/munich-accident-forecasting) | Python | 2 weeks ago | Monthly forecasts for Munich road accident counts, per accident category, with a temporal split, baseline comparison and a FastAPI service |
 | [`Deep-Learning-Flood-Prediction-LSTM`](https://github.com/mzquadri/Deep-Learning-Flood-Prediction-LSTM) | Python | 3 weeks ago | Controlled LSTM time-series experiment on a synthetic catchment: next-day discharge forecasting scored against day-of-year, persistence and linear… |
 | [`Time-Series-Streamflow-Forecasting`](https://github.com/mzquadri/Time-Series-Streamflow-Forecasting) | Python | 3 weeks ago | Forecasting benchmark on a synthetic daily streamflow series: XGBoost loses to predicting yesterday, a ridge model wins, and the original… |
 | [`jobhunter`](https://github.com/mzquadri/jobhunter) | Python | 3 weeks ago | Finds AI/ML jobs worth applying to, scores them against your CV, and drafts the cover letter. FastAPI + Next.js + Postgres on Docker Compose. |
@@ -42,9 +42,9 @@ a visitor sees.
 ## Pushed to most recently
 
 <!-- AUTO:now:start -->
-- **[insureassist-rag-mlops](https://github.com/mzquadri/insureassist-rag-mlops)** — Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI,… <sub>`today` · Python</sub>
-- **[ZQ](https://github.com/mzquadri/ZQ)** — Personal portfolio source with curated, traceable project links and scoped results <sub>`today` · TypeScript</sub>
-- **[UQ-Hydrology-Seminar-TUM](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM)** — TUM group seminar project on mathematical uncertainty quantification in hydrology <sub>`yesterday` · Jupyter Notebook</sub>
+- **[ai-engineering-portfolio](https://github.com/mzquadri/ai-engineering-portfolio)** — Architecture case studies from AI engineering systems I contributed to, spanning verifiable legal… <sub>`today` · HTML</sub>
+- **[MLOps-End-to-End-Pipeline](https://github.com/mzquadri/MLOps-End-to-End-Pipeline)** — End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion… <sub>`today` · Python</sub>
+- **[munich-accident-forecasting](https://github.com/mzquadri/munich-accident-forecasting)** — Monthly forecasts for Munich road accident counts, per accident category, with a temporal split,… <sub>`today` · Python</sub>
 <!-- AUTO:now:end -->
 
 ## Writing
