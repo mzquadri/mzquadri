@@ -25,9 +25,19 @@ jobs:
         id: snake
         with:
           github_user_name: ${{ github.repository_owner }}
+          # The dot ramp runs the page's own palette from the empty cell up to
+          # the busiest day: paper, pale teal, teal, blue, violet. The snake
+          # takes the blue in light and the violet in dark so it stays legible
+          # against each background. A `#` is literal inside a block scalar,
+          # so these do not need quoting.
+          #
+          # These are the muted hues the rest of the page moved to. They were
+          # left on the earlier saturated set when the palette changed, which
+          # nothing would have caught: the action only runs twice a day, so the
+          # snake on the page was still the old green for a while after.
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake.svg?color_snake=#4C7CAE&color_dots=#EEF2F7,#C3DAD4,#8FC0B6,#5E93B8,#7A6BA8
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#A99CD6&color_dots=#161D27,#1F3A36,#35665E,#406A8C,#6F5F9B
 
       - name: Push to the output branch
         uses: crazy-max/ghaction-github-pages@v4

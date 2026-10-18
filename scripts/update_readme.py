@@ -4,9 +4,16 @@
 Three blocks, each delimited by markers so the hand-written prose around them is
 never touched:
 
-  AUTO:now      REPOSITORIES.md — the few repositories last pushed to, with how long ago
-  AUTO:index    REPOSITORIES.md — every public repository, language and one-line description
-  AUTO:writing  REPOSITORIES.md — the articles on mzquadri.de, grouped by subject
+  AUTO:now      REPOSITORIES.md, the few repositories last pushed to, with how long ago
+  AUTO:index    REPOSITORIES.md, every public repository, language and one-line description
+  AUTO:writing  REPOSITORIES.md, the articles on mzquadri.de, grouped by subject
+
+Everything this writes goes through check_characters.py in the same workflow run,
+so the generator cannot emit a character the checker bans. It used to: an em dash
+between a name and its description, a middle dot between tags, an ellipsis on a
+truncated description, and an em dash standing in for a missing language or
+description. Four substitutions, all of them in output rather than in prose, and
+all of them would have failed the first run of the check step.
 
 All three generate into REPOSITORIES.md. README.md is a designed page now --
 a banner, six project cards, the certificates and the links -- and a block that
@@ -114,12 +121,12 @@ def block_now(rs: list[dict], now: datetime) -> str:
         # One clause is enough here; the index below carries the full sentence.
         short = desc.split(". ")[0].rstrip(".")
         if len(short) > 104:
-            short = short[:101].rsplit(" ", 1)[0] + "…"
+            short = short[:101].rsplit(" ", 1)[0] + "..."
         lang = r.get("language")
-        tail = f" · {lang}" if lang else ""
+        tail = f", {lang}" if lang else ""
         lines.append(
-            f"- **[{r['name']}](https://github.com/{OWNER}/{r['name']})** "
-            f"— {short} <sub>`{ago(r['pushed_at'], now)}`{tail}</sub>"
+            f"- **[{r['name']}](https://github.com/{OWNER}/{r['name']})**, "
+            f"{short} <sub>`{ago(r['pushed_at'], now)}`{tail}</sub>"
         )
     return "\n".join(lines)
 
@@ -133,10 +140,10 @@ def block_index(rs: list[dict], now: datetime) -> str:
         "|---|---|---|---|",
     ]
     for r in live:
-        desc = (r.get("description") or "—").strip().replace("|", "\\|")
+        desc = (r.get("description") or "no description").strip().replace("|", "\\|")
         if len(desc) > 150:
-            desc = desc[:147].rsplit(" ", 1)[0] + "…"
-        lang = r.get("language") or "—"
+            desc = desc[:147].rsplit(" ", 1)[0] + "..."
+        lang = r.get("language") or "none"
         tags = []
         if r["fork"]:
             tags.append("fork")
@@ -144,7 +151,7 @@ def block_index(rs: list[dict], now: datetime) -> str:
             tags.append("archived")
         name = f"[`{r['name']}`](https://github.com/{OWNER}/{r['name']})"
         if tags:
-            name += f" <sub>{' · '.join(tags)}</sub>"
+            name += f" <sub>{', '.join(tags)}</sub>"
         lines.append(f"| {name} | {lang} | {ago(r['pushed_at'], now)} | {desc} |")
 
     lines.append("")

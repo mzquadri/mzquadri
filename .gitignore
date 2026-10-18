@@ -1,0 +1,14 @@
+# Bytecode from the two Python guards in scripts/. Generated on every local run
+# of check_characters.py and verify_claims.py, and the CI job regenerates them
+# from source, so nothing is lost by keeping them out.
+__pycache__/
+*.py[cod]
+
+# Assistant configuration. Regenerated on demand and not part of this work.
+/CLAUDE.md
+/CLAUDE.local.md
+/AGENTS.md
+/.claude/
+/.codex/
+/.cursorrules
+/.mcp.json

@@ -48,6 +48,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update_readme.py
 
+      # The same character rule the CV, the website and the LinkedIn copy are
+      # held to, enforced here on the files the profile publishes. An em dash
+      # or a middle dot that reads as machine-written is a build failure, not
+      # a matter of taste, so the four surfaces cannot drift apart.
+      - name: Check for machine-written punctuation
+        run: python scripts/check_characters.py README.md REPOSITORIES.md claims.yml
+
       - name: Verify published figures against their sources
         id: claims
         continue-on-error: true

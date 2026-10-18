@@ -178,17 +178,38 @@ CHECKERS = {"json": check_json, "regex": check_regex, "derived": check_derived}
 CERT_START = "<!-- CERTIFICATES:start -->"
 CERT_END = "<!-- CERTIFICATES:end -->"
 CERT_ROW = re.compile(r"^\|\s*(?P<name>[^|]+?)\s*\|[^|]*\|\s*\[verify\]\((?P<url>[^)]+)\)\s*\|$")
+# The profile renders each certificate as a shields.io badge that links to its
+# verification page. The checked name is the badge's alt text, not the label
+# printed on the badge: a badge is a fixed-width strip and the longer course
+# titles have to be shortened to fit one, while the alt text is free to carry
+# the title the issuer actually uses. Alt text is also what a screen reader
+# announces, so the accessible name and the verified name are the same string
+# by construction.
+CERT_BADGE = re.compile(r"^\[!\[(?P<name>.+?)\]\((?P<badge>[^()]+)\)\]\((?P<url>[^()]+)\)$")
+# The badges now carry a light and a dark chip, which markdown image syntax
+# cannot express, so each certificate is one <a><picture></picture></a> line.
+# The checked name is still the alt text, for the same reason: it is what a
+# screen reader announces, so the accessible name and the verified name stay
+# the same string by construction.
+CERT_PICTURE = re.compile(
+    r'^<a href="(?P<url>[^"]+)">\s*<picture>.*?<img alt="(?P<name>[^"]*)"[^>]*>'
+    r"\s*</picture>\s*</a>$"
+)
 
 
 def check_certificates(spec: dict, readme: str) -> list[str]:
-    """Assert the Certificates table in README.md is exactly the list in claims.yml.
+    """Assert the Certificates block in README.md is exactly the list in claims.yml.
 
     Returns a list of problems; empty means it matches.
 
     This is a set comparison in both directions, which is the point. Checking
-    only that each held certificate appears would pass a table that also lists
-    three that are not held — which is the error this was written for. Checking
+    only that each held certificate appears would pass a block that also lists
+    three that are not held, which is the error this was written for. Checking
     only the count would pass a substitution.
+
+    Two renderings are accepted, a table row and a linked badge, because the
+    profile has used both. What neither may do is carry a name that claims.yml
+    does not.
     """
     declared = spec.get("certificates")
     if not declared:
@@ -203,11 +224,24 @@ def check_certificates(spec: dict, readme: str) -> list[str]:
     problems: list[str] = []
     for line in table.splitlines():
         line = line.strip()
-        if not line.startswith("|") or set(line) <= set("|- "):
+        if not line:
             continue
-        m = CERT_ROW.match(line)
+        if line.startswith("|"):
+            if set(line) <= set("|- "):
+                continue
+            m = CERT_ROW.match(line)
+        elif line.startswith("[!["):
+            m = CERT_BADGE.match(line)
+        elif line.startswith("<a href="):
+            m = CERT_PICTURE.match(line)
+        else:
+            continue
         if not m:
-            problems.append(f"certificate row is not name / issuer / [verify](url): {line}")
+            problems.append(
+                "certificate line is none of the three accepted renderings, a "
+                "name / issuer / [verify](url) row, a [![name](badge)](verify) "
+                f"badge, or an <a><picture> pair: {line}"
+            )
             continue
         name = m.group("name").replace("&middot;", "·").strip()
         if name in rendered:
@@ -268,7 +302,10 @@ def main() -> int:
             rows.append((cid, repo, source, rendered, True, ""))
             print(f"  ok    {cid:22s} {repo}/{source}")
         except ClaimError as exc:
-            rows.append((cid, repo, source, "—", False, str(exc)))
+            # A plain hyphen, not an em dash: this string is written into
+            # README.md by --report, and the character check that guards the
+            # profile would fail the file it had just generated.
+            rows.append((cid, repo, source, "-", False, str(exc)))
             failures.append((cid, str(exc)))
             print(f"  FAIL  {cid:22s} {repo}/{source}\n          {exc}")
 

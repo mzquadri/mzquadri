@@ -15,7 +15,7 @@
 #
 # `certificates` is a different kind of check and does not reach the network.
 # It is the closed list of qualifications held, and verify_claims.py asserts the
-# Certificates table in README.md matches it exactly — same names, same verify
+# Certificates table in README.md matches it exactly, same names, same verify
 # links, nothing extra. It exists because the opposite happened: a README
 # rewrite replaced the verified table with three plausible course names that
 # were never held, and no check noticed. Set membership, not substring
@@ -102,8 +102,8 @@ claims:
     repo: insureassist-rag-mlops
     source: docs/BENCHMARK.md
     kind: regex
-    pattern: '0\.167\s*→\s*0\.556'
-    shown: "3.3× from the 0.167 starting point"
+    pattern: '0\.167\s*→\s*0\.556'  # check-characters: allow, matches the arrow in the source file, not prose here
+    shown: "3.3x from the 0.167 starting point"
     note: >
       The 3.3x is against the documented starting point, not against the dense
       or BM25 baselines in reference_run.json, which sit at 1.00x and 1.67x.
@@ -153,7 +153,9 @@ claims:
     repo: munich-accident-forecasting
     source: README.md
     kind: regex
-    pattern: 'match `results/reference_run\.json` to 1e-9'
+    # The README was rewritten and no longer phrases this as "match ... to 1e-9";
+    # it now names the constant and where it is applied. Same gate, same number.
+    pattern: 'TOLERANCE = 1e-9'
     shown: "1e-9"
     note: A property of the CI gate rather than a measured quantity.
 
@@ -197,7 +199,7 @@ claims:
     key: windows.pandemic_free.margin_over_seasonal_naive_scaled_mae
     expect: -0.155261
     tol: 0.0005
-    shown: "−15.5%"
+    shown: "-15.5%"
 
   # --- MLOps-End-to-End-Pipeline ---------------------------------------
   - id: mlops-test-auc
