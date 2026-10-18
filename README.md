@@ -381,6 +381,31 @@ verification page shows.</sub>
 <!-- CONNECT:end -->
 
 <!-- AUTO:claims:start -->
+`16/16` figures on this page were re-checked against the file that produced them, by the workflow that built this line.
+
+<details>
+<summary>Which number comes from which file</summary>
+
+| | Claim | Source of record | Value |
+|---|---|---|---|
+| ✅ | `mcp-caught` | [`mcp-policy-gateway/assets/summary.json`](https://github.com/mzquadri/mcp-policy-gateway/blob/main/assets/summary.json) | 0.9615 |
+| ✅ | `mcp-false-block` | [`mcp-policy-gateway/assets/summary.json`](https://github.com/mzquadri/mcp-policy-gateway/blob/main/assets/summary.json) | 0.0952 |
+| ✅ | `mcp-keyword-baseline` | [`mcp-policy-gateway/assets/summary.json`](https://github.com/mzquadri/mcp-policy-gateway/blob/main/assets/summary.json) | 0.3846 |
+| ✅ | `mcp-unhandled` | [`mcp-policy-gateway/assets/summary.json`](https://github.com/mzquadri/mcp-policy-gateway/blob/main/assets/summary.json) | 3 |
+| ✅ | `rag-top-doc` | [`insureassist-rag-mlops/eval/reference_run.json`](https://github.com/mzquadri/insureassist-rag-mlops/blob/main/eval/reference_run.json) | 0.5556 |
+| ✅ | `rag-starting-point` | [`insureassist-rag-mlops/docs/BENCHMARK.md`](https://github.com/mzquadri/insureassist-rag-mlops/blob/main/docs/BENCHMARK.md) | matched |
+| ✅ | `thesis-ece` | [`ml_surrogates_for_agent_based_transport_models/docs/UQ_SUMMARY.md`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models/blob/main/docs/UQ_SUMMARY.md) | matched |
+| ✅ | `thesis-selective-mae` | [`ml_surrogates_for_agent_based_transport_models/docs/UQ_SUMMARY.md`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models/blob/main/docs/UQ_SUMMARY.md) | matched |
+| ✅ | `drift-target` | [`drift-aware-ml-platform/README.md`](https://github.com/mzquadri/drift-aware-ml-platform/blob/main/README.md) | matched |
+| ✅ | `drift-blind-spot` | [`drift-aware-ml-platform/README.md`](https://github.com/mzquadri/drift-aware-ml-platform/blob/main/README.md) | matched |
+| ✅ | `munich-reproduction` | [`munich-accident-forecasting/README.md`](https://github.com/mzquadri/munich-accident-forecasting/blob/main/README.md) | matched |
+| ✅ | `hydro-nse-cost` | [`UQ-Hydrology-Seminar-TUM/README.md`](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM/blob/main/README.md) | 0.1484 |
+| ✅ | `hydro-recovery` | [`UQ-Hydrology-Seminar-TUM/README.md`](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM/blob/main/README.md) | matched |
+| ✅ | `munich-published-margin` | [`munich-accident-forecasting/results/pandemic_free_run.json`](https://github.com/mzquadri/munich-accident-forecasting/blob/main/results/pandemic_free_run.json) | 0.234414 |
+| ✅ | `munich-prepandemic-margin` | [`munich-accident-forecasting/results/pandemic_free_run.json`](https://github.com/mzquadri/munich-accident-forecasting/blob/main/results/pandemic_free_run.json) | -0.155261 |
+| ✅ | `mlops-test-auc` | [`MLOps-End-to-End-Pipeline/README.md`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline/blob/main/README.md) | matched |
+
+</details>
 <!-- AUTO:claims:end -->
 
 ![](https://capsule-render.vercel.app/api?type=waving&section=footer&height=120&color=0:4E9A92,50:4C7CAE,100:7A6BA8)
