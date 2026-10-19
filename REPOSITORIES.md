@@ -11,29 +11,29 @@ a visitor sees.
 <!-- AUTO:index:start -->
 | Repository | Language | Last pushed | |
 |---|---|---|---|
-| [`audi-release-tracking-case-study`](https://github.com/mzquadri/audi-release-tracking-case-study) | Python | today | A case study of an Excel VBA release tracking tool built during an internship at AUDI AG |
+| [`MLOps-End-to-End-Pipeline`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Python | today | End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion gate that can refuse, immutable model bundles, a... |
+| [`munich-accident-forecasting`](https://github.com/mzquadri/munich-accident-forecasting) | Python | today | Monthly forecasts for Munich road accident counts, per accident category, with a temporal split, baseline comparison and a FastAPI service |
+| [`drift-aware-ml-platform`](https://github.com/mzquadri/drift-aware-ml-platform) | Python | today | Hourly demand forecasting that detects concept drift in its own target and retrains itself. MLflow registry aliases, Evidently, Airflow,... |
 | [`insureassist-rag-mlops`](https://github.com/mzquadri/insureassist-rag-mlops) | Python | today | Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI, Qdrant, reproducible evaluation, Docker and... |
-| [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | today | Personal portfolio source with curated, traceable project links and scoped results |
-| [`ai-engineering-portfolio`](https://github.com/mzquadri/ai-engineering-portfolio) | HTML | yesterday | Architecture case studies from AI engineering systems I contributed to, spanning verifiable legal knowledge, document intelligence, AI compliance,... |
-| [`MLOps-End-to-End-Pipeline`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Python | yesterday | End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion gate that can refuse, immutable model bundles, a... |
-| [`munich-accident-forecasting`](https://github.com/mzquadri/munich-accident-forecasting) | Python | yesterday | Monthly forecasts for Munich road accident counts, per accident category, with a temporal split, baseline comparison and a FastAPI service |
-| [`drift-aware-ml-platform`](https://github.com/mzquadri/drift-aware-ml-platform) | Python | yesterday | Hourly demand forecasting that detects concept drift in its own target and retrains itself. MLflow registry aliases, Evidently, Airflow,... |
-| [`mcp-policy-gateway`](https://github.com/mzquadri/mcp-policy-gateway) | Python | yesterday | Runtime policy enforcement and adversarial evaluation for MCP tool calls |
-| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | yesterday | M.Sc. thesis: Uncertainty Quantification for Machine Learning Models in Transportation Policy Analysis (TUM, 2026). Uncertainty layer over a... |
+| [`mcp-policy-gateway`](https://github.com/mzquadri/mcp-policy-gateway) | Python | today | Runtime policy enforcement and adversarial evaluation for MCP tool calls |
+| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | today | M.Sc. thesis: Uncertainty Quantification for Machine Learning Models in Transportation Policy Analysis (TUM, 2026). Uncertainty layer over a... |
+| [`audi-release-tracking-case-study`](https://github.com/mzquadri/audi-release-tracking-case-study) | Python | today | A case study of an Excel VBA release tracking tool built during an internship at AUDI AG |
+| [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | yesterday | Personal portfolio source with curated, traceable project links and scoped results |
+| [`ai-engineering-portfolio`](https://github.com/mzquadri/ai-engineering-portfolio) | HTML | 2 days ago | Architecture case studies from AI engineering systems I contributed to, spanning verifiable legal knowledge, document intelligence, AI compliance,... |
 | [`UQ-Hydrology-Seminar-TUM`](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | Jupyter Notebook | 3 days ago | TUM group seminar project on mathematical uncertainty quantification in hydrology |
 | [`medico`](https://github.com/mzquadri/medico) | Python | 3 days ago | Research training script for multi-label chest X-ray classification across CheXpert, NIH ChestX-ray14 and a pneumonia set, with masked labels and... |
 | [`Deep-Learning-Flood-Prediction-LSTM`](https://github.com/mzquadri/Deep-Learning-Flood-Prediction-LSTM) | Python | 3 weeks ago | Controlled LSTM time-series experiment on a synthetic catchment: next-day discharge forecasting scored against day-of-year, persistence and linear... |
 | [`Time-Series-Streamflow-Forecasting`](https://github.com/mzquadri/Time-Series-Streamflow-Forecasting) | Python | 3 weeks ago | Forecasting benchmark on a synthetic daily streamflow series: XGBoost loses to predicting yesterday, a ridge model wins, and the original... |
 | [`jobhunter`](https://github.com/mzquadri/jobhunter) | Python | 3 weeks ago | Finds AI/ML jobs worth applying to, scores them against your CV, and drafts the cover letter. FastAPI + Next.js + Postgres on Docker Compose. |
-| [`Neural-Network-Identifiability-Analysis`](https://github.com/mzquadri/Neural-Network-Identifiability-Analysis) | Python | 4 weeks ago | Numerical verification of neural network parameter symmetries: which transformations leave the represented function unchanged, for tanh, sigmoid... |
-| [`Battery-SOC-Estimation-ML`](https://github.com/mzquadri/Battery-SOC-Estimation-ML) | Python | 4 weeks ago | How a state-of-charge benchmark reports a convincing number without the model learning anything: the split, and four features that restate the... |
+| [`Neural-Network-Identifiability-Analysis`](https://github.com/mzquadri/Neural-Network-Identifiability-Analysis) | Python | 5 weeks ago | Numerical verification of neural network parameter symmetries: which transformations leave the represented function unchanged, for tanh, sigmoid... |
+| [`Battery-SOC-Estimation-ML`](https://github.com/mzquadri/Battery-SOC-Estimation-ML) | Python | 5 weeks ago | How a state-of-charge benchmark reports a convincing number without the model learning anything: the split, and four features that restate the... |
 | [`Insurance-Claims-Prediction-ML`](https://github.com/mzquadri/Insurance-Claims-Prediction-ML) | Python | 5 weeks ago | Measuring what it costs to choose a decision threshold and a calibrator on the set you report them on. Generated portfolio, known true... |
 | [`ML-Water-Quality-Classification`](https://github.com/mzquadri/ML-Water-Quality-Classification) | Python | 5 weeks ago | Synthetic-data classification demonstration; not evidence for water-safety decisions |
 | [`Weather-Data-Analytics-EDA`](https://github.com/mzquadri/Weather-Data-Analytics-EDA) | Python | 5 weeks ago | Deterministic synthetic-weather exploratory analysis and visualization demonstration |
 | [`Supply-Chain-Analytics-Dashboard`](https://github.com/mzquadri/Supply-Chain-Analytics-Dashboard) | Python | 5 weeks ago | Exploratory supply-chain analytics prototype with explicit proxy metrics and chronological evaluation |
-| [`Statistical-Learning-Transportation`](https://github.com/mzquadri/Statistical-Learning-Transportation) | Jupyter Notebook | 5 weeks ago | Coursework for Statistical Learning and Data Analytics for Transportation Systems (M.Sc. Mathematics in Science and Engineering, TUM) - Problem... |
-| [`CNN-Image-Classification-PyTorch`](https://github.com/mzquadri/CNN-Image-Classification-PyTorch) | Python | 5 weeks ago | CIFAR-10 custom CNN reference experiment with tracked evaluation artifacts |
-| [`NLP-Text-Classification-Transformers`](https://github.com/mzquadri/NLP-Text-Classification-Transformers) | Python | 5 weeks ago | AG News text-classification experiment with explicit synthetic fixture for offline development |
+| [`Statistical-Learning-Transportation`](https://github.com/mzquadri/Statistical-Learning-Transportation) | Jupyter Notebook | 6 weeks ago | Coursework for Statistical Learning and Data Analytics for Transportation Systems (M.Sc. Mathematics in Science and Engineering, TUM) - Problem... |
+| [`CNN-Image-Classification-PyTorch`](https://github.com/mzquadri/CNN-Image-Classification-PyTorch) | Python | 6 weeks ago | CIFAR-10 custom CNN reference experiment with tracked evaluation artifacts |
+| [`NLP-Text-Classification-Transformers`](https://github.com/mzquadri/NLP-Text-Classification-Transformers) | Python | 6 weeks ago | AG News text-classification experiment with explicit synthetic fixture for offline development |
 | [`colpali`](https://github.com/mzquadri/colpali) <sub>fork</sub> | none | 7 weeks ago | The code used to train and run inference with the ColVision models, e.g. ColPali, ColQwen2, and ColSmol. |
 | [`express`](https://github.com/mzquadri/express) <sub>fork</sub> | none | 11 months ago | Fast, unopinionated, minimalist web framework for node. |
 
@@ -43,9 +43,9 @@ a visitor sees.
 ## Pushed to most recently
 
 <!-- AUTO:now:start -->
-- **[audi-release-tracking-case-study](https://github.com/mzquadri/audi-release-tracking-case-study)**, A case study of an Excel VBA release tracking tool built during an internship at AUDI AG <sub>`today`, Python</sub>
-- **[insureassist-rag-mlops](https://github.com/mzquadri/insureassist-rag-mlops)**, Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI,... <sub>`today`, Python</sub>
-- **[ZQ](https://github.com/mzquadri/ZQ)**, Personal portfolio source with curated, traceable project links and scoped results <sub>`today`, TypeScript</sub>
+- **[MLOps-End-to-End-Pipeline](https://github.com/mzquadri/MLOps-End-to-End-Pipeline)**, End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion... <sub>`today`, Python</sub>
+- **[munich-accident-forecasting](https://github.com/mzquadri/munich-accident-forecasting)**, Monthly forecasts for Munich road accident counts, per accident category, with a temporal split,... <sub>`today`, Python</sub>
+- **[drift-aware-ml-platform](https://github.com/mzquadri/drift-aware-ml-platform)**, Hourly demand forecasting that detects concept drift in its own target and retrains itself <sub>`today`, Python</sub>
 <!-- AUTO:now:end -->
 
 ## Writing
