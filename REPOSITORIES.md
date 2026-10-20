@@ -11,17 +11,20 @@ a visitor sees.
 <!-- AUTO:index:start -->
 | Repository | Language | Last pushed | |
 |---|---|---|---|
-| [`MLOps-End-to-End-Pipeline`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Python | today | End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion gate that can refuse, immutable model bundles, a... |
-| [`munich-accident-forecasting`](https://github.com/mzquadri/munich-accident-forecasting) | Python | today | Monthly forecasts for Munich road accident counts, per accident category, with a temporal split, baseline comparison and a FastAPI service |
-| [`drift-aware-ml-platform`](https://github.com/mzquadri/drift-aware-ml-platform) | Python | today | Hourly demand forecasting that detects concept drift in its own target and retrains itself. MLflow registry aliases, Evidently, Airflow,... |
-| [`insureassist-rag-mlops`](https://github.com/mzquadri/insureassist-rag-mlops) | Python | today | Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI, Qdrant, reproducible evaluation, Docker and... |
-| [`mcp-policy-gateway`](https://github.com/mzquadri/mcp-policy-gateway) | Python | today | Runtime policy enforcement and adversarial evaluation for MCP tool calls |
-| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | today | M.Sc. thesis: Uncertainty Quantification for Machine Learning Models in Transportation Policy Analysis (TUM, 2026). Uncertainty layer over a... |
-| [`audi-release-tracking-case-study`](https://github.com/mzquadri/audi-release-tracking-case-study) | Python | today | A case study of an Excel VBA release tracking tool built during an internship at AUDI AG |
-| [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | yesterday | Personal portfolio source with curated, traceable project links and scoped results |
-| [`ai-engineering-portfolio`](https://github.com/mzquadri/ai-engineering-portfolio) | HTML | 2 days ago | Architecture case studies from AI engineering systems I contributed to, spanning verifiable legal knowledge, document intelligence, AI compliance,... |
-| [`UQ-Hydrology-Seminar-TUM`](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | Jupyter Notebook | 3 days ago | TUM group seminar project on mathematical uncertainty quantification in hydrology |
-| [`medico`](https://github.com/mzquadri/medico) | Python | 3 days ago | Research training script for multi-label chest X-ray classification across CheXpert, NIH ChestX-ray14 and a pneumonia set, with masked labels and... |
+| [`tf-keras-vs-pytorch-cifar10`](https://github.com/mzquadri/tf-keras-vs-pytorch-cifar10) | none | today | The PyTorch CIFAR-10 CNN translated to TensorFlow/Keras and trained on the same exported 15,000-image split, with the 815,018 parameter count... |
+| [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | today | Personal portfolio source with curated, traceable project links and scoped results |
+| [`r-ggplot2-eurostat-report`](https://github.com/mzquadri/r-ggplot2-eurostat-report) | HTML | today | A Quarto and ggplot2 report on Eurostat modal split of inland passenger transport, decoding JSON-stat by hand with a verification step |
+| [`bm25-rrf-java`](https://github.com/mzquadri/bm25-rrf-java) | Java | today | Okapi BM25 and reciprocal rank fusion on the JVM, held to the rankings of a Python implementation by a parity test over 50 queries |
+| [`MLOps-End-to-End-Pipeline`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Python | yesterday | End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion gate that can refuse, immutable model bundles, a... |
+| [`munich-accident-forecasting`](https://github.com/mzquadri/munich-accident-forecasting) | Python | yesterday | Monthly forecasts for Munich road accident counts, per accident category, with a temporal split, baseline comparison and a FastAPI service |
+| [`drift-aware-ml-platform`](https://github.com/mzquadri/drift-aware-ml-platform) | Python | yesterday | Hourly demand forecasting that detects concept drift in its own target and retrains itself. MLflow registry aliases, Evidently, Airflow,... |
+| [`insureassist-rag-mlops`](https://github.com/mzquadri/insureassist-rag-mlops) | Python | yesterday | Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI, Qdrant, reproducible evaluation, Docker and... |
+| [`mcp-policy-gateway`](https://github.com/mzquadri/mcp-policy-gateway) | Python | yesterday | Runtime policy enforcement and adversarial evaluation for MCP tool calls |
+| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | yesterday | M.Sc. thesis: Uncertainty Quantification for Machine Learning Models in Transportation Policy Analysis (TUM, 2026). Uncertainty layer over a... |
+| [`audi-release-tracking-case-study`](https://github.com/mzquadri/audi-release-tracking-case-study) | Python | yesterday | A case study of an Excel VBA release tracking tool built during an internship at AUDI AG |
+| [`ai-engineering-portfolio`](https://github.com/mzquadri/ai-engineering-portfolio) | HTML | 3 days ago | Architecture case studies from AI engineering systems I contributed to, spanning verifiable legal knowledge, document intelligence, AI compliance,... |
+| [`UQ-Hydrology-Seminar-TUM`](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | Jupyter Notebook | 4 days ago | TUM group seminar project on mathematical uncertainty quantification in hydrology |
+| [`medico`](https://github.com/mzquadri/medico) | Python | 4 days ago | Research training script for multi-label chest X-ray classification across CheXpert, NIH ChestX-ray14 and a pneumonia set, with masked labels and... |
 | [`Deep-Learning-Flood-Prediction-LSTM`](https://github.com/mzquadri/Deep-Learning-Flood-Prediction-LSTM) | Python | 3 weeks ago | Controlled LSTM time-series experiment on a synthetic catchment: next-day discharge forecasting scored against day-of-year, persistence and linear... |
 | [`Time-Series-Streamflow-Forecasting`](https://github.com/mzquadri/Time-Series-Streamflow-Forecasting) | Python | 3 weeks ago | Forecasting benchmark on a synthetic daily streamflow series: XGBoost loses to predicting yesterday, a ridge model wins, and the original... |
 | [`jobhunter`](https://github.com/mzquadri/jobhunter) | Python | 3 weeks ago | Finds AI/ML jobs worth applying to, scores them against your CV, and drafts the cover letter. FastAPI + Next.js + Postgres on Docker Compose. |
@@ -34,18 +37,18 @@ a visitor sees.
 | [`Statistical-Learning-Transportation`](https://github.com/mzquadri/Statistical-Learning-Transportation) | Jupyter Notebook | 6 weeks ago | Coursework for Statistical Learning and Data Analytics for Transportation Systems (M.Sc. Mathematics in Science and Engineering, TUM) - Problem... |
 | [`CNN-Image-Classification-PyTorch`](https://github.com/mzquadri/CNN-Image-Classification-PyTorch) | Python | 6 weeks ago | CIFAR-10 custom CNN reference experiment with tracked evaluation artifacts |
 | [`NLP-Text-Classification-Transformers`](https://github.com/mzquadri/NLP-Text-Classification-Transformers) | Python | 6 weeks ago | AG News text-classification experiment with explicit synthetic fixture for offline development |
-| [`colpali`](https://github.com/mzquadri/colpali) <sub>fork</sub> | none | 7 weeks ago | The code used to train and run inference with the ColVision models, e.g. ColPali, ColQwen2, and ColSmol. |
+| [`colpali`](https://github.com/mzquadri/colpali) <sub>fork</sub> | none | 8 weeks ago | The code used to train and run inference with the ColVision models, e.g. ColPali, ColQwen2, and ColSmol. |
 | [`express`](https://github.com/mzquadri/express) <sub>fork</sub> | none | 11 months ago | Fast, unopinionated, minimalist web framework for node. |
 
-<sub>25 public repositories, including the learning exercises. A list that dropped them would be saying something else.</sub>
+<sub>28 public repositories, including the learning exercises. A list that dropped them would be saying something else.</sub>
 <!-- AUTO:index:end -->
 
 ## Pushed to most recently
 
 <!-- AUTO:now:start -->
-- **[MLOps-End-to-End-Pipeline](https://github.com/mzquadri/MLOps-End-to-End-Pipeline)**, End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion... <sub>`today`, Python</sub>
-- **[munich-accident-forecasting](https://github.com/mzquadri/munich-accident-forecasting)**, Monthly forecasts for Munich road accident counts, per accident category, with a temporal split,... <sub>`today`, Python</sub>
-- **[drift-aware-ml-platform](https://github.com/mzquadri/drift-aware-ml-platform)**, Hourly demand forecasting that detects concept drift in its own target and retrains itself <sub>`today`, Python</sub>
+- **[tf-keras-vs-pytorch-cifar10](https://github.com/mzquadri/tf-keras-vs-pytorch-cifar10)**, The PyTorch CIFAR-10 CNN translated to TensorFlow/Keras and trained on the same exported... <sub>`today`</sub>
+- **[ZQ](https://github.com/mzquadri/ZQ)**, Personal portfolio source with curated, traceable project links and scoped results <sub>`today`, TypeScript</sub>
+- **[r-ggplot2-eurostat-report](https://github.com/mzquadri/r-ggplot2-eurostat-report)**, A Quarto and ggplot2 report on Eurostat modal split of inland passenger transport, decoding... <sub>`today`, HTML</sub>
 <!-- AUTO:now:end -->
 
 ## Writing
@@ -79,8 +82,8 @@ a visitor sees.
 - [Building an Independent Verification Oracle](https://mzquadri.de/learn/building-an-independent-verification-oracle)
 - [Equal Counts Do Not Prove Two Stores Agree](https://mzquadri.de/learn/equal-counts-do-not-prove-two-stores-agree)
 - [Evidence Provenance for Knowledge Systems](https://mzquadri.de/learn/evidence-provenance-for-knowledge-systems)
+- [Four Operator Actions for a Knowledge System](https://mzquadri.de/learn/reingest-verify-reconcile-withdraw)
 - [Production AI Systems Need Refusal Paths](https://mzquadri.de/learn/refusal-paths-in-production-ai-systems)
-- [Re-ingest, Verify, Reconcile, Withdraw](https://mzquadri.de/learn/reingest-verify-reconcile-withdraw)
 
 **Retrieval and Grounded Generation**
 
