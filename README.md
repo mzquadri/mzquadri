@@ -29,9 +29,17 @@
   sixteen. Which is which is in scenes3d/record.mjs, with a size budget per
   asset that fails the render rather than warning about it.
 
-  The header is the 3D portrait from mzquadri.de: the same parallax shader,
-  offsetting where it samples the photograph against a depth map, never
-  altering a pixel of it.
+  The header is one picture inside an <h1> and there is no heading text, so
+  the name is said once rather than twice. The <h1> still gives the page a
+  level-one heading and a screen reader still announces the name, because it
+  reads the image's alt text as the heading. Putting the name above the
+  picture as well printed it twice, which is what it looked like.
+
+  The portrait in it is generated, not photographed: the owner made it from
+  his own photograph and it is used here only. The website, both CVs and
+  LinkedIn keep the real one. It moves under the same parallax shader the
+  site uses, which offsets where it samples the picture against a depth map
+  and never alters a pixel of it. See photos/PHOTOS.md.
 
   The title, the description and the result beside each animation are markdown
   rather than pixels, so a screen reader can read them.
@@ -46,14 +54,12 @@
   would eventually break the layout.
 -->
 
-# Mohd Zamin Quadri
-
+<h1>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/scenes3d/hero-dark.webp">
-  <img alt="Mohd Zamin Quadri, AI/ML Engineer in Munich. A 3D portrait that moves with depth, beside four lines: M.Sc. Mathematics at TU Munich, uncertainty quantification, RAG and MLOps, and data to deployed service." src="assets/scenes3d/hero-light.webp" width="880">
+  <img alt="Mohd Zamin Quadri, AI/ML Engineer. A portrait that moves with depth, beside three lines: M.Sc. Mathematics in Science and Engineering, Technical University of Munich. B.Sc. (Hons.) Mathematics, Aligarh Muslim University. Generative AI and RAG, uncertainty quantification, MLOps." src="assets/scenes3d/hero-light.webp" width="880">
 </picture>
-
----
+</h1>
 
 ### About
 
@@ -100,9 +106,9 @@ Every one of those panels is real and every callout names the file it is
 checked against. It is drawn at 1860 pixels wide, which is more than a README
 column can show, so it is linked rather than inlined.
 
-Both versions above animate, and the full one is also a static
-[`assets/system-light-static.svg`](assets/system-light-static.svg) with a dark
-variant beside it.
+Both versions above animate. The full one also has a
+[still copy](assets/system-light-static.svg) in the repository, light and dark,
+for anywhere that does not play animation.
 
 ---
 
@@ -117,7 +123,9 @@ variant beside it.
 
 **[Legal knowledge base, BP-IT](https://github.com/mzquadri/ai-engineering-portfolio)**  
 German and EU legislation parsed into PostgreSQL, embedded into Qdrant and linked in Neo4j, with a verification layer that decides what counts as certified.  
-<sub><b>25 of 52</b> laws certified complete, all of them German, and no EU law has passed yet. Four of the five services are mine</sub>
+<sub><b>25 of 52</b> laws certified complete, all of them German, and no EU law has passed yet</sub>
+
+<sub><b>I built four of the five services.</b> The Ingestion Preprocessor, which parses and normalises the law XML and owns the canonical PostgreSQL. The Ingestion Loader, the only writer into Qdrant and Neo4j. The Legal KB Health Service, which runs up to 14 gates per law. The Legal KB Dashboard, which shows what passed and what did not. <b>I extended the fifth</b>, the Entity Producer, which predates legal ingestion.</sub>
 
 <br>
 
@@ -132,6 +140,8 @@ German and EU legislation parsed into PostgreSQL, embedded into Qdrant and linke
 A DenseNet-121 over the 14 NIH findings, learning from three datasets that each annotate a different subset of them.  
 <sub><b>22 of 42</b> source and finding pairs carry a label. The rest are masked out of the loss rather than counted as absent</sub>
 
+<sub><b>I built</b> the training script, the split module, the leakage audit, the tests, the benchmark and the AI Radiologist demo. <b>Not mine:</b> the three datasets, which belong to Stanford, the NIH Clinical Center and Kermany and colleagues, and the pre-trained backbone the demo runs.</sub>
+
 <br>
 
 <a href="https://github.com/mzquadri/audi-release-tracking-case-study">
@@ -145,9 +155,10 @@ A DenseNet-121 over the 14 NIH findings, learning from three datasets that each 
 An Excel VBA application with UserForms replacing a manual search through a development release sheet, wired to the release system every department already used.  
 <sub><b>One click</b> in place of a scan through roughly 600 rows and 130 or more columns, with separate German and Chinese market interfaces</sub>
 
-<sub>The legal knowledge base is one of five services and four of them are mine. Nothing from
-the confidential draft appears here or in that repository. The AUDI case study carries no
-AUDI code, no internal data and no screenshots.</sub>
+<sub><b>I built</b> the whole application: the UserForms, the lookup over the release sheet, the write-back, and the separate German and Chinese market interfaces. <b>Not mine:</b> FREIPRO, the release system it connects to, which every department already used.</sub>
+
+<sub>Nothing from the confidential draft appears here or in that repository. The AUDI case
+study carries no AUDI code, no internal data and no screenshots.</sub>
 
 ---
 
@@ -164,6 +175,8 @@ AUDI code, no internal data and no screenshots.</sub>
 A graph network predicts how Paris traffic shifts when a lane closes, in milliseconds instead of hours. The year went into whether it knows when it is wrong.  
 <sub><b>82%</b> less calibration error, and <b>41.2%</b> less error on the half it keeps</sub>
 
+<sub><b>I built</b> the uncertainty layer: the calibration, the conformal intervals and the selective-prediction evaluation. <b>Upstream work</b> by Elena Natterer and colleagues: the PointNetTransfGAT surrogate, the MATSim preprocessing and the base training pipeline it sits on.</sub>
+
 <br>
 
 <a href="https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM">
@@ -176,6 +189,8 @@ A graph network predicts how Paris traffic shifts when a lane closes, in millise
 **[Uncertainty in a hydrological model](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM)**  
 A TUM seminar on what a calibrated model loses to the uncertainty around it, in the parameters and in the measurements.  
 <sub><b>0.148 NSE</b> lost to observation error, far more than rainfall noise costs, and recalibration recovers only <b>5.76%</b> of it</sub>
+
+<sub><b>A three-person group submission</b>, and the science is the group's. <b>My part</b> was the HBV and Cython integration, the data configuration, the production runs behind the published results, and the report assembly.</sub>
 
 <br>
 
@@ -190,12 +205,7 @@ A TUM seminar on what a calibrated model loses to the uncertainty around it, in 
 A TUM research seminar on Fefferman's framework: when do the weights of a network follow from the function it computes, and when do they not.  
 <sub>A network and its permuted, sign-flipped twin agree to <b>1.19e-7</b>. Same function, different weights. tanh is identifiable, ReLU is not</sub>
 
-<sub>The PointNetTransfGAT surrogate, the MATSim preprocessing and the base training
-pipeline in the thesis are upstream work by <b>Elena Natterer et al.</b> The uncertainty
-layer on top of them is mine. The hydrology seminar was a <b>three-person group
-submission</b> and the science is the group's; my part was the HBV and Cython
-integration, the data configuration, the production runs behind the published results,
-and the report assembly.</sub>
+<sub><b>I built</b> the constructions, the permuted and sign-flipped twins, and the numerical diagnostics that expose them. <b>Not mine:</b> the framework, which is Fefferman's, and the seminar was supervised at TUM.</sub>
 
 ---
 
@@ -212,6 +222,8 @@ and the report assembly.</sub>
 Nine controls at the three points where an MCP tool call is untrusted, and a deterministic benchmark that measures which control stops which attack.  
 <sub><b>96.2%</b> of attacks caught at <b>9.5%</b> false positives, against a keyword filter's <b>38.5%</b>. <b>Three scored misses</b> stay in the corpus</sub>
 
+<sub><b>I built all of it</b>, the nine controls and the benchmark that measures which control stops which attack.</sub>
+
 <br>
 
 <a href="https://github.com/mzquadri/insureassist-rag-mlops">
@@ -224,6 +236,8 @@ Nine controls at the three points where an MCP tool call is untrusted, and a det
 **[Retrieval that cites its sources](https://github.com/mzquadri/insureassist-rag-mlops)**  
 Hybrid retrieval over NFIP flood-insurance policy forms, with a benchmark that isolates which change earned which gain.  
 <sub>Top-document accuracy <b>0.556</b>, <b>3.3x from the 0.167 starting point</b>, earned by the chunk size. Fusion earned the ranking, MRR 0.365 to 0.420</sub>
+
+<sub><b>I built all of it</b>, the hybrid retrieval and the benchmark that isolates which change earned which gain.</sub>
 
 <br>
 
@@ -238,6 +252,8 @@ Hybrid retrieval over NFIP flood-insurance policy forms, with a benchmark that i
 Hourly demand forecasting that watches its own target for drift and retrains itself. A feature-only monitor would have missed the thing that moved.  
 <sub><b>0.679</b> target drift while only 9% of features move, and a feature-only monitor sleeps through a <b>63% rise</b> in demand</sub>
 
+<sub><b>I built all of it</b>, the target-drift monitor, the retraining trigger and the service around them.</sub>
+
 <br>
 
 <a href="https://github.com/mzquadri/munich-accident-forecasting">
@@ -251,6 +267,8 @@ Hourly demand forecasting that watches its own target for drift and retrains its
 Monthly Munich road-accident forecasts behind a service. Re-run on an ordinary pre-pandemic period, the published margin does not survive, and the repository says so.  
 <sub>A published <b>+23.4%</b> margin becomes <b>-15.5%</b> on ordinary years. CI reproduces the published run to <b>1e-9</b> or fails</sub>
 
+<sub><b>I built all of it</b>, the forecasting service and the re-run that contradicts the published margin.</sub>
+
 <br>
 
 <a href="https://github.com/mzquadri/MLOps-End-to-End-Pipeline">
@@ -263,6 +281,8 @@ Monthly Munich road-accident forecasts behind a service. Re-run on an ordinary p
 **[A promotion gate that can refuse](https://github.com/mzquadri/MLOps-End-to-End-Pipeline)**  
 The whole lifecycle for one small task: validation that can stop the run, leak-free feature fitting, immutable bundles, and a gate that requires a margin over a baseline.  
 <sub><b>0.8795</b> ROC-AUC on the held-out split, behind a gate that can say no</sub>
+
+<sub><b>I built all of it</b>, every stage from validation to the promotion gate that can refuse.</sub>
 
 ---
 
