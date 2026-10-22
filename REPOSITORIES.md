@@ -11,13 +11,13 @@ a visitor sees.
 <!-- AUTO:index:start -->
 | Repository | Language | Last pushed | |
 |---|---|---|---|
+| [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | today | Personal portfolio source with curated, traceable project links and scoped results |
 | [`insureassist-rag-mlops`](https://github.com/mzquadri/insureassist-rag-mlops) | Python | today | Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI, Qdrant, reproducible evaluation, Docker and... |
 | [`UQ-Hydrology-Seminar-TUM`](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | Jupyter Notebook | today | TUM group seminar project on mathematical uncertainty quantification in hydrology |
 | [`drift-aware-ml-platform`](https://github.com/mzquadri/drift-aware-ml-platform) | Python | today | Hourly demand forecasting that detects concept drift in its own target and retrains itself. MLflow registry aliases, Evidently, Airflow,... |
 | [`medico`](https://github.com/mzquadri/medico) | Python | today | Research training script for multi-label chest X-ray classification across CheXpert, NIH ChestX-ray14 and a pneumonia set, with masked labels and... |
 | [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | today | M.Sc. thesis: Uncertainty Quantification for Machine Learning Models in Transportation Policy Analysis (TUM, 2026). Uncertainty layer over a... |
-| [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | today | Personal portfolio source with curated, traceable project links and scoped results |
-| [`audi-release-tracking-case-study`](https://github.com/mzquadri/audi-release-tracking-case-study) | Python | today | A case study of an Excel VBA release tracking tool built during an internship at AUDI AG |
+| [`audi-release-tracking-case-study`](https://github.com/mzquadri/audi-release-tracking-case-study) | Python | yesterday | A case study of an Excel VBA release tracking tool built during an internship at AUDI AG |
 | [`tf-keras-vs-pytorch-cifar10`](https://github.com/mzquadri/tf-keras-vs-pytorch-cifar10) | Python | yesterday | The PyTorch CIFAR-10 CNN translated to TensorFlow/Keras and trained on the same exported 15,000-image split, with the 815,018 parameter count... |
 | [`r-ggplot2-eurostat-report`](https://github.com/mzquadri/r-ggplot2-eurostat-report) | HTML | 2 days ago | A Quarto and ggplot2 report on Eurostat modal split of inland passenger transport, decoding JSON-stat by hand with a verification step |
 | [`bm25-rrf-java`](https://github.com/mzquadri/bm25-rrf-java) | Java | 2 days ago | Okapi BM25 and reciprocal rank fusion on the JVM, held to the rankings of a Python implementation by a parity test over 50 queries |
@@ -46,9 +46,9 @@ a visitor sees.
 ## Pushed to most recently
 
 <!-- AUTO:now:start -->
+- **[ZQ](https://github.com/mzquadri/ZQ)**, Personal portfolio source with curated, traceable project links and scoped results <sub>`today`, TypeScript</sub>
 - **[insureassist-rag-mlops](https://github.com/mzquadri/insureassist-rag-mlops)**, Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI,... <sub>`today`, Python</sub>
 - **[UQ-Hydrology-Seminar-TUM](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM)**, TUM group seminar project on mathematical uncertainty quantification in hydrology <sub>`today`, Jupyter Notebook</sub>
-- **[drift-aware-ml-platform](https://github.com/mzquadri/drift-aware-ml-platform)**, Hourly demand forecasting that detects concept drift in its own target and retrains itself <sub>`today`, Python</sub>
 <!-- AUTO:now:end -->
 
 ## Writing
