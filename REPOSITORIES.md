@@ -11,20 +11,20 @@ a visitor sees.
 <!-- AUTO:index:start -->
 | Repository | Language | Last pushed | |
 |---|---|---|---|
-| [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | 8 days ago | Personal portfolio source with curated, traceable project links and scoped results |
-| [`CNN-Image-Classification-PyTorch`](https://github.com/mzquadri/CNN-Image-Classification-PyTorch) | Python | 9 days ago | CIFAR-10 custom CNN reference experiment with tracked evaluation artifacts |
-| [`Time-Series-Streamflow-Forecasting`](https://github.com/mzquadri/Time-Series-Streamflow-Forecasting) | Python | 9 days ago | Forecasting benchmark on a synthetic daily streamflow series: XGBoost loses to predicting yesterday, a ridge model wins, and the original... |
-| [`UQ-Hydrology-Seminar-TUM`](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | Jupyter Notebook | 9 days ago | TUM group seminar project on mathematical uncertainty quantification in hydrology |
-| [`MLOps-End-to-End-Pipeline`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Python | 9 days ago | End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion gate that can refuse, immutable model bundles, a... |
-| [`insureassist-rag-mlops`](https://github.com/mzquadri/insureassist-rag-mlops) | Python | 9 days ago | Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI, Qdrant, reproducible evaluation, Docker and... |
-| [`mcp-policy-gateway`](https://github.com/mzquadri/mcp-policy-gateway) | Python | 9 days ago | Runtime policy enforcement and adversarial evaluation for MCP tool calls |
-| [`drift-aware-ml-platform`](https://github.com/mzquadri/drift-aware-ml-platform) | Python | 11 days ago | Hourly demand forecasting that detects concept drift in its own target and retrains itself. MLflow registry aliases, Evidently, Airflow,... |
-| [`medico`](https://github.com/mzquadri/medico) | Python | 11 days ago | Research training script for multi-label chest X-ray classification across CheXpert, NIH ChestX-ray14 and a pneumonia set, with masked labels and... |
-| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | 11 days ago | M.Sc. thesis: Uncertainty Quantification for Machine Learning Models in Transportation Policy Analysis (TUM, 2026). Uncertainty layer over a... |
-| [`audi-release-tracking-case-study`](https://github.com/mzquadri/audi-release-tracking-case-study) | Python | 12 days ago | A case study of an Excel VBA release tracking tool built during an internship at AUDI AG |
-| [`tf-keras-vs-pytorch-cifar10`](https://github.com/mzquadri/tf-keras-vs-pytorch-cifar10) | Python | 12 days ago | The PyTorch CIFAR-10 CNN translated to TensorFlow/Keras and trained on the same exported 15,000-image split, with the 815,018 parameter count... |
-| [`r-ggplot2-eurostat-report`](https://github.com/mzquadri/r-ggplot2-eurostat-report) | HTML | 13 days ago | A Quarto and ggplot2 report on Eurostat modal split of inland passenger transport, decoding JSON-stat by hand with a verification step |
-| [`bm25-rrf-java`](https://github.com/mzquadri/bm25-rrf-java) | Java | 13 days ago | Okapi BM25 and reciprocal rank fusion on the JVM, held to the rankings of a Python implementation by a parity test over 50 queries |
+| [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | 9 days ago | Personal portfolio source with curated, traceable project links and scoped results |
+| [`CNN-Image-Classification-PyTorch`](https://github.com/mzquadri/CNN-Image-Classification-PyTorch) | Python | 10 days ago | CIFAR-10 custom CNN reference experiment with tracked evaluation artifacts |
+| [`Time-Series-Streamflow-Forecasting`](https://github.com/mzquadri/Time-Series-Streamflow-Forecasting) | Python | 10 days ago | Forecasting benchmark on a synthetic daily streamflow series: XGBoost loses to predicting yesterday, a ridge model wins, and the original... |
+| [`UQ-Hydrology-Seminar-TUM`](https://github.com/mzquadri/UQ-Hydrology-Seminar-TUM) | Jupyter Notebook | 10 days ago | TUM group seminar project on mathematical uncertainty quantification in hydrology |
+| [`MLOps-End-to-End-Pipeline`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Python | 10 days ago | End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion gate that can refuse, immutable model bundles, a... |
+| [`insureassist-rag-mlops`](https://github.com/mzquadri/insureassist-rag-mlops) | Python | 10 days ago | Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI, Qdrant, reproducible evaluation, Docker and... |
+| [`mcp-policy-gateway`](https://github.com/mzquadri/mcp-policy-gateway) | Python | 10 days ago | Runtime policy enforcement and adversarial evaluation for MCP tool calls |
+| [`drift-aware-ml-platform`](https://github.com/mzquadri/drift-aware-ml-platform) | Python | 12 days ago | Hourly demand forecasting that detects concept drift in its own target and retrains itself. MLflow registry aliases, Evidently, Airflow,... |
+| [`medico`](https://github.com/mzquadri/medico) | Python | 12 days ago | Research training script for multi-label chest X-ray classification across CheXpert, NIH ChestX-ray14 and a pneumonia set, with masked labels and... |
+| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | 12 days ago | M.Sc. thesis: Uncertainty Quantification for Machine Learning Models in Transportation Policy Analysis (TUM, 2026). Uncertainty layer over a... |
+| [`audi-release-tracking-case-study`](https://github.com/mzquadri/audi-release-tracking-case-study) | Python | 13 days ago | A case study of an Excel VBA release tracking tool built during an internship at AUDI AG |
+| [`tf-keras-vs-pytorch-cifar10`](https://github.com/mzquadri/tf-keras-vs-pytorch-cifar10) | Python | 13 days ago | The PyTorch CIFAR-10 CNN translated to TensorFlow/Keras and trained on the same exported 15,000-image split, with the 815,018 parameter count... |
+| [`r-ggplot2-eurostat-report`](https://github.com/mzquadri/r-ggplot2-eurostat-report) | HTML | 2 weeks ago | A Quarto and ggplot2 report on Eurostat modal split of inland passenger transport, decoding JSON-stat by hand with a verification step |
+| [`bm25-rrf-java`](https://github.com/mzquadri/bm25-rrf-java) | Java | 2 weeks ago | Okapi BM25 and reciprocal rank fusion on the JVM, held to the rankings of a Python implementation by a parity test over 50 queries |
 | [`munich-accident-forecasting`](https://github.com/mzquadri/munich-accident-forecasting) | Python | 2 weeks ago | Monthly forecasts for Munich road accident counts, per accident category, with a temporal split, baseline comparison and a FastAPI service |
 | [`ai-engineering-portfolio`](https://github.com/mzquadri/ai-engineering-portfolio) | HTML | 2 weeks ago | Architecture case studies from AI engineering systems I contributed to, spanning verifiable legal knowledge, document intelligence, AI compliance,... |
 | [`Deep-Learning-Flood-Prediction-LSTM`](https://github.com/mzquadri/Deep-Learning-Flood-Prediction-LSTM) | Python | 5 weeks ago | Controlled LSTM time-series experiment on a synthetic catchment: next-day discharge forecasting scored against day-of-year, persistence and linear... |
@@ -46,9 +46,9 @@ a visitor sees.
 ## Pushed to most recently
 
 <!-- AUTO:now:start -->
-- **[ZQ](https://github.com/mzquadri/ZQ)**, Personal portfolio source with curated, traceable project links and scoped results <sub>`8 days ago`, TypeScript</sub>
-- **[CNN-Image-Classification-PyTorch](https://github.com/mzquadri/CNN-Image-Classification-PyTorch)**, CIFAR-10 custom CNN reference experiment with tracked evaluation artifacts <sub>`9 days ago`, Python</sub>
-- **[Time-Series-Streamflow-Forecasting](https://github.com/mzquadri/Time-Series-Streamflow-Forecasting)**, Forecasting benchmark on a synthetic daily streamflow series: XGBoost loses to predicting yesterday,... <sub>`9 days ago`, Python</sub>
+- **[ZQ](https://github.com/mzquadri/ZQ)**, Personal portfolio source with curated, traceable project links and scoped results <sub>`9 days ago`, TypeScript</sub>
+- **[CNN-Image-Classification-PyTorch](https://github.com/mzquadri/CNN-Image-Classification-PyTorch)**, CIFAR-10 custom CNN reference experiment with tracked evaluation artifacts <sub>`10 days ago`, Python</sub>
+- **[Time-Series-Streamflow-Forecasting](https://github.com/mzquadri/Time-Series-Streamflow-Forecasting)**, Forecasting benchmark on a synthetic daily streamflow series: XGBoost loses to predicting yesterday,... <sub>`10 days ago`, Python</sub>
 <!-- AUTO:now:end -->
 
 ## Writing
