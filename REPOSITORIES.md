@@ -13,7 +13,8 @@ a visitor sees.
 |---|---|---|---|
 | [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | today | Personal portfolio source with curated, traceable project links and scoped results |
 | [`ai-engineering-portfolio`](https://github.com/mzquadri/ai-engineering-portfolio) | HTML | today | Architecture case studies from AI engineering systems I contributed to, spanning verifiable legal knowledge, document intelligence, AI compliance,... |
-| [`medico`](https://github.com/mzquadri/medico) | Python | yesterday | Research training script for multi-label chest X-ray classification across CheXpert, NIH ChestX-ray14 and a pneumonia set, with masked labels and... |
+| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | today | M.Sc. thesis: Uncertainty Quantification for Machine Learning Models in Transportation Policy Analysis (TUM, 2026). Uncertainty layer over a... |
+| [`medico`](https://github.com/mzquadri/medico) | Python | today | Research training script for multi-label chest X-ray classification across CheXpert, NIH ChestX-ray14 and a pneumonia set, with masked labels and... |
 | [`mcp-policy-gateway`](https://github.com/mzquadri/mcp-policy-gateway) | Python | yesterday | Runtime policy enforcement and adversarial evaluation for MCP tool calls |
 | [`Time-Series-Streamflow-Forecasting`](https://github.com/mzquadri/Time-Series-Streamflow-Forecasting) | Python | yesterday | Forecasting benchmark on a synthetic daily streamflow series: XGBoost loses to predicting yesterday, a ridge model wins, and the original... |
 | [`CNN-Image-Classification-PyTorch`](https://github.com/mzquadri/CNN-Image-Classification-PyTorch) | Python | yesterday | CIFAR-10 custom CNN reference experiment with tracked evaluation artifacts |
@@ -36,7 +37,6 @@ a visitor sees.
 | [`jobhunter`](https://github.com/mzquadri/jobhunter) | Python | yesterday | Finds AI/ML jobs worth applying to, scores them against your CV, and drafts the cover letter. FastAPI + Next.js + Postgres on Docker Compose. |
 | [`MLOps-End-to-End-Pipeline`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Python | yesterday | End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion gate that can refuse, immutable model bundles, a... |
 | [`insureassist-rag-mlops`](https://github.com/mzquadri/insureassist-rag-mlops) | Python | yesterday | Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI, Qdrant, reproducible evaluation, Docker and... |
-| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | yesterday | M.Sc. thesis: Uncertainty Quantification for Machine Learning Models in Transportation Policy Analysis (TUM, 2026). Uncertainty layer over a... |
 | [`colpali`](https://github.com/mzquadri/colpali) <sub>fork</sub> | none | 2 months ago | The code used to train and run inference with the ColVision models, e.g. ColPali, ColQwen2, and ColSmol. |
 | [`express`](https://github.com/mzquadri/express) <sub>fork</sub> | none | a year ago | Fast, unopinionated, minimalist web framework for node. |
 
@@ -48,7 +48,7 @@ a visitor sees.
 <!-- AUTO:now:start -->
 - **[ZQ](https://github.com/mzquadri/ZQ)**, Personal portfolio source with curated, traceable project links and scoped results <sub>`today`, TypeScript</sub>
 - **[ai-engineering-portfolio](https://github.com/mzquadri/ai-engineering-portfolio)**, Architecture case studies from AI engineering systems I contributed to, spanning verifiable legal... <sub>`today`, HTML</sub>
-- **[medico](https://github.com/mzquadri/medico)**, Research training script for multi-label chest X-ray classification across CheXpert, NIH... <sub>`yesterday`, Python</sub>
+- **[medico](https://github.com/mzquadri/medico)**, Research training script for multi-label chest X-ray classification across CheXpert, NIH... <sub>`today`, Python</sub>
 <!-- AUTO:now:end -->
 
 ## Writing
