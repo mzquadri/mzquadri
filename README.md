@@ -123,7 +123,7 @@ for anywhere that does not play animation.
 
 **[Legal knowledge base, BP-IT](https://github.com/mzquadri/ai-engineering-portfolio)**  
 German and EU legislation parsed into PostgreSQL, embedded into Qdrant and linked in Neo4j, with a verification layer that decides what counts as certified.  
-<sub><b>25 of 52</b> laws certified complete, all of them German, and no EU law has passed yet</sub>
+<sub><b>52</b> laws certified complete: 32 German and 20 EU</sub>
 
 <sub><b>I built four of the five services.</b> The Ingestion Preprocessor, which parses and normalises the law XML and owns the canonical PostgreSQL. The Ingestion Loader, the only writer into Qdrant and Neo4j. The Legal KB Health Service, which runs up to 14 gates per law. The Legal KB Dashboard, which shows what passed and what did not. <b>I extended the fifth</b>, the Entity Producer, which predates legal ingestion.</sub>
 
