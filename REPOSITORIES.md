@@ -37,7 +37,7 @@ a visitor sees.
 | [`NLP-Text-Classification-Transformers`](https://github.com/mzquadri/NLP-Text-Classification-Transformers) | Python | 2 weeks ago | AG News text-classification experiment with explicit synthetic fixture for offline development |
 | [`MLOps-End-to-End-Pipeline`](https://github.com/mzquadri/MLOps-End-to-End-Pipeline) | Python | 2 weeks ago | End-to-end ML lifecycle on a licensed dataset: validation, leak-free feature fitting, a promotion gate that can refuse, immutable model bundles, a... |
 | [`insureassist-rag-mlops`](https://github.com/mzquadri/insureassist-rag-mlops) | Python | 2 weeks ago | Measured RAG reference implementation over NFIP policy forms: BGE + BM25 hybrid retrieval, FastAPI, Qdrant, reproducible evaluation, Docker and... |
-| [`colpali`](https://github.com/mzquadri/colpali) <sub>fork</sub> | none | 2 months ago | The code used to train and run inference with the ColVision models, e.g. ColPali, ColQwen2, and ColSmol. |
+| [`colpali`](https://github.com/mzquadri/colpali) <sub>fork</sub> | none | 3 months ago | The code used to train and run inference with the ColVision models, e.g. ColPali, ColQwen2, and ColSmol. |
 | [`express`](https://github.com/mzquadri/express) <sub>fork</sub> | none | a year ago | Fast, unopinionated, minimalist web framework for node. |
 
 <sub>28 public repositories, including the learning exercises. A list that dropped them would be saying something else.</sub>
