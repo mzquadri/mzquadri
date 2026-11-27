@@ -11,11 +11,11 @@ a visitor sees.
 <!-- AUTO:index:start -->
 | Repository | Language | Last pushed | |
 |---|---|---|---|
-| [`jobhunter`](https://github.com/mzquadri/jobhunter) | Python | 2 weeks ago | Finds AI/ML jobs worth applying to, scores them against your CV, and drafts the cover letter. FastAPI + Next.js + Postgres on Docker Compose. |
-| [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | 2 weeks ago | Personal portfolio source with curated, traceable project links and scoped results |
-| [`medico`](https://github.com/mzquadri/medico) | Python | 2 weeks ago | Research training script for multi-label chest X-ray classification across CheXpert, NIH ChestX-ray14 and a pneumonia set, with masked labels and... |
-| [`ai-engineering-portfolio`](https://github.com/mzquadri/ai-engineering-portfolio) | HTML | 2 weeks ago | Architecture case studies from AI engineering systems I contributed to, spanning verifiable legal knowledge, document intelligence, AI compliance,... |
-| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | 2 weeks ago | M.Sc. thesis: Uncertainty Quantification for Machine Learning Models in Transportation Policy Analysis (TUM, 2026). Uncertainty layer over a... |
+| [`jobhunter`](https://github.com/mzquadri/jobhunter) | Python | 3 weeks ago | Finds AI/ML jobs worth applying to, scores them against your CV, and drafts the cover letter. FastAPI + Next.js + Postgres on Docker Compose. |
+| [`ZQ`](https://github.com/mzquadri/ZQ) | TypeScript | 3 weeks ago | Personal portfolio source with curated, traceable project links and scoped results |
+| [`medico`](https://github.com/mzquadri/medico) | Python | 3 weeks ago | Research training script for multi-label chest X-ray classification across CheXpert, NIH ChestX-ray14 and a pneumonia set, with masked labels and... |
+| [`ai-engineering-portfolio`](https://github.com/mzquadri/ai-engineering-portfolio) | HTML | 3 weeks ago | Architecture case studies from AI engineering systems I contributed to, spanning verifiable legal knowledge, document intelligence, AI compliance,... |
+| [`ml_surrogates_for_agent_based_transport_models`](https://github.com/mzquadri/ml_surrogates_for_agent_based_transport_models) <sub>fork</sub> | Python | 3 weeks ago | M.Sc. thesis: Uncertainty Quantification for Machine Learning Models in Transportation Policy Analysis (TUM, 2026). Uncertainty layer over a... |
 | [`mcp-policy-gateway`](https://github.com/mzquadri/mcp-policy-gateway) | Python | 3 weeks ago | Runtime policy enforcement and adversarial evaluation for MCP tool calls |
 | [`Time-Series-Streamflow-Forecasting`](https://github.com/mzquadri/Time-Series-Streamflow-Forecasting) | Python | 3 weeks ago | Forecasting benchmark on a synthetic daily streamflow series: XGBoost loses to predicting yesterday, a ridge model wins, and the original... |
 | [`CNN-Image-Classification-PyTorch`](https://github.com/mzquadri/CNN-Image-Classification-PyTorch) | Python | 3 weeks ago | CIFAR-10 custom CNN reference experiment with tracked evaluation artifacts |
@@ -46,9 +46,9 @@ a visitor sees.
 ## Pushed to most recently
 
 <!-- AUTO:now:start -->
-- **[jobhunter](https://github.com/mzquadri/jobhunter)**, Finds AI/ML jobs worth applying to, scores them against your CV, and drafts the cover letter <sub>`2 weeks ago`, Python</sub>
-- **[ZQ](https://github.com/mzquadri/ZQ)**, Personal portfolio source with curated, traceable project links and scoped results <sub>`2 weeks ago`, TypeScript</sub>
-- **[medico](https://github.com/mzquadri/medico)**, Research training script for multi-label chest X-ray classification across CheXpert, NIH... <sub>`2 weeks ago`, Python</sub>
+- **[jobhunter](https://github.com/mzquadri/jobhunter)**, Finds AI/ML jobs worth applying to, scores them against your CV, and drafts the cover letter <sub>`3 weeks ago`, Python</sub>
+- **[ZQ](https://github.com/mzquadri/ZQ)**, Personal portfolio source with curated, traceable project links and scoped results <sub>`3 weeks ago`, TypeScript</sub>
+- **[medico](https://github.com/mzquadri/medico)**, Research training script for multi-label chest X-ray classification across CheXpert, NIH... <sub>`3 weeks ago`, Python</sub>
 <!-- AUTO:now:end -->
 
 ## Writing
